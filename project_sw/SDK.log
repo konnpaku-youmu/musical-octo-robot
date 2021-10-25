@@ -3799,3 +3799,2132 @@ con
 ----------------End of Script----------------
 
 22:23:02 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+22:28:20 INFO  : Disconnected from the channel tcfchan#82.
+22:28:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+22:28:21 INFO  : 'fpga -state' command is executed.
+22:28:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:28:21 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:28:21 INFO  : 'jtag frequency' command is executed.
+22:28:21 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+22:28:21 INFO  : Context for 'APU' is selected.
+22:28:22 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+22:28:22 INFO  : 'configparams force-mem-access 1' command is executed.
+22:28:22 INFO  : Context for 'APU' is selected.
+22:28:22 INFO  : 'stop' command is executed.
+22:28:22 INFO  : 'ps7_init' command is executed.
+22:28:22 INFO  : 'ps7_post_config' command is executed.
+22:28:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:28:22 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:28:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:28:24 ERROR : Memory write error at 0xFC000000. APB AP transaction error, DAP status f0000021
+22:28:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+----------------End of Script----------------
+
+22:28:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+22:28:40 INFO  : 'fpga -state' command is executed.
+22:28:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:28:40 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:28:40 INFO  : 'jtag frequency' command is executed.
+22:28:40 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+22:28:40 INFO  : Context for 'APU' is selected.
+22:28:40 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+22:28:40 INFO  : 'configparams force-mem-access 1' command is executed.
+22:28:40 INFO  : Context for 'APU' is selected.
+22:28:40 INFO  : 'stop' command is executed.
+22:28:40 ERROR : AP transaction error, DAP status f0000021
+22:28:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+22:29:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+22:29:36 INFO  : 'fpga -state' command is executed.
+22:29:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:29:36 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:29:36 INFO  : 'jtag frequency' command is executed.
+22:29:36 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+22:29:36 INFO  : Context for 'APU' is selected.
+22:29:36 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+22:29:36 INFO  : 'configparams force-mem-access 1' command is executed.
+22:29:36 INFO  : Context for 'APU' is selected.
+22:29:36 INFO  : 'stop' command is executed.
+22:29:36 ERROR : AP transaction error, DAP status f0000021
+22:29:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+22:30:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+22:30:02 INFO  : 'fpga -state' command is executed.
+22:30:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:30:02 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:30:02 INFO  : 'jtag frequency' command is executed.
+22:30:02 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+22:30:02 INFO  : Context for 'APU' is selected.
+22:30:02 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+22:30:02 INFO  : 'configparams force-mem-access 1' command is executed.
+22:30:02 INFO  : Context for 'APU' is selected.
+22:30:02 INFO  : 'stop' command is executed.
+22:30:02 ERROR : AP transaction error, DAP status f0000021
+22:30:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+22:30:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+22:30:59 INFO  : 'fpga -state' command is executed.
+22:30:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:30:59 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:30:59 INFO  : 'jtag frequency' command is executed.
+22:30:59 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+22:30:59 INFO  : Context for 'APU' is selected.
+22:30:59 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+22:30:59 INFO  : 'configparams force-mem-access 1' command is executed.
+22:30:59 INFO  : Context for 'APU' is selected.
+22:30:59 INFO  : 'stop' command is executed.
+22:30:59 ERROR : AP transaction error, DAP status f0000021
+22:30:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+22:31:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+22:31:38 INFO  : 'fpga -state' command is executed.
+22:31:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:31:38 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:31:38 INFO  : 'jtag frequency' command is executed.
+22:31:38 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+22:31:38 INFO  : Context for 'APU' is selected.
+22:31:38 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+22:31:38 INFO  : 'configparams force-mem-access 1' command is executed.
+22:31:38 INFO  : Context for 'APU' is selected.
+22:31:38 INFO  : 'stop' command is executed.
+22:31:38 ERROR : AP transaction error, DAP status f0000021
+22:31:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+22:31:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+22:31:45 INFO  : 'fpga -state' command is executed.
+22:31:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:31:45 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:31:45 INFO  : 'jtag frequency' command is executed.
+22:31:45 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+22:31:46 INFO  : Context for 'APU' is selected.
+22:31:46 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+22:31:46 INFO  : 'configparams force-mem-access 1' command is executed.
+22:31:46 INFO  : Context for 'APU' is selected.
+22:31:46 INFO  : 'stop' command is executed.
+22:31:46 ERROR : AP transaction error, DAP status f0000021
+22:31:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+22:31:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+22:31:55 INFO  : 'fpga -state' command is executed.
+22:31:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:31:55 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:31:55 INFO  : 'jtag frequency' command is executed.
+22:31:55 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+22:31:55 INFO  : Context for 'APU' is selected.
+22:31:55 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+22:31:55 INFO  : 'configparams force-mem-access 1' command is executed.
+22:31:55 INFO  : Context for 'APU' is selected.
+22:31:55 INFO  : 'stop' command is executed.
+22:31:55 ERROR : AP transaction error, DAP status f0000021
+22:31:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+22:32:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+22:32:01 INFO  : 'fpga -state' command is executed.
+22:32:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:32:01 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:32:01 INFO  : 'jtag frequency' command is executed.
+22:32:01 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+22:32:01 INFO  : Context for 'APU' is selected.
+22:32:01 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+22:32:01 INFO  : 'configparams force-mem-access 1' command is executed.
+22:32:01 INFO  : Context for 'APU' is selected.
+22:32:02 INFO  : 'stop' command is executed.
+22:32:02 INFO  : 'ps7_init' command is executed.
+22:32:02 INFO  : 'ps7_post_config' command is executed.
+22:32:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:32:02 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:32:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:32:02 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:32:02 INFO  : 'configparams force-mem-access 0' command is executed.
+22:32:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:32:02 INFO  : Memory regions updated for context APU
+22:32:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:32:02 INFO  : 'con' command is executed.
+22:32:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+22:32:02 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+22:32:08 INFO  : Disconnected from the channel tcfchan#83.
+22:32:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+22:32:09 INFO  : 'fpga -state' command is executed.
+22:32:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:32:09 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:32:09 INFO  : 'jtag frequency' command is executed.
+22:32:09 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+22:32:09 INFO  : Context for 'APU' is selected.
+22:32:10 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+22:32:10 INFO  : 'configparams force-mem-access 1' command is executed.
+22:32:10 INFO  : Context for 'APU' is selected.
+22:32:10 INFO  : 'stop' command is executed.
+22:32:10 INFO  : 'ps7_init' command is executed.
+22:32:10 INFO  : 'ps7_post_config' command is executed.
+22:32:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:32:10 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:32:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:32:10 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:32:10 INFO  : 'configparams force-mem-access 0' command is executed.
+22:32:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:32:10 INFO  : Memory regions updated for context APU
+22:32:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:32:11 INFO  : 'con' command is executed.
+22:32:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+22:32:11 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+22:32:29 INFO  : Disconnected from the channel tcfchan#84.
+22:32:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+22:32:30 INFO  : 'fpga -state' command is executed.
+22:32:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:32:30 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:32:30 INFO  : 'jtag frequency' command is executed.
+22:32:30 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+22:32:30 INFO  : Context for 'APU' is selected.
+22:32:31 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+22:32:31 INFO  : 'configparams force-mem-access 1' command is executed.
+22:32:31 INFO  : Context for 'APU' is selected.
+22:32:31 INFO  : 'stop' command is executed.
+22:32:31 INFO  : 'ps7_init' command is executed.
+22:32:31 INFO  : 'ps7_post_config' command is executed.
+22:32:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:32:31 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:32:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:32:31 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:32:31 INFO  : 'configparams force-mem-access 0' command is executed.
+22:32:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:32:31 INFO  : Memory regions updated for context APU
+22:32:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:32:31 INFO  : 'con' command is executed.
+22:32:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+22:32:31 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+22:34:18 INFO  : Disconnected from the channel tcfchan#85.
+22:34:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+22:34:19 INFO  : 'fpga -state' command is executed.
+22:34:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:34:19 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:34:19 INFO  : 'jtag frequency' command is executed.
+22:34:19 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+22:34:19 INFO  : Context for 'APU' is selected.
+22:34:20 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+22:34:20 INFO  : 'configparams force-mem-access 1' command is executed.
+22:34:20 INFO  : Context for 'APU' is selected.
+22:34:20 INFO  : 'stop' command is executed.
+22:34:20 INFO  : 'ps7_init' command is executed.
+22:34:20 INFO  : 'ps7_post_config' command is executed.
+22:34:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:34:20 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:34:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:34:21 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:34:21 INFO  : 'configparams force-mem-access 0' command is executed.
+22:34:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:34:21 INFO  : Memory regions updated for context APU
+22:34:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:34:21 INFO  : 'con' command is executed.
+22:34:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+22:34:21 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+22:34:24 INFO  : Disconnected from the channel tcfchan#86.
+22:34:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+22:34:25 INFO  : 'fpga -state' command is executed.
+22:34:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:34:26 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:34:26 INFO  : 'jtag frequency' command is executed.
+22:34:26 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+22:34:26 INFO  : Context for 'APU' is selected.
+22:34:26 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+22:34:26 INFO  : 'configparams force-mem-access 1' command is executed.
+22:34:26 INFO  : Context for 'APU' is selected.
+22:34:27 INFO  : 'stop' command is executed.
+22:34:27 INFO  : 'ps7_init' command is executed.
+22:34:27 INFO  : 'ps7_post_config' command is executed.
+22:34:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:34:27 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:34:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:34:27 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:34:27 INFO  : 'configparams force-mem-access 0' command is executed.
+22:34:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:34:27 INFO  : Memory regions updated for context APU
+22:34:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:34:27 INFO  : 'con' command is executed.
+22:34:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+22:34:27 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+22:35:10 INFO  : Disconnected from the channel tcfchan#87.
+22:35:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+22:35:11 INFO  : 'fpga -state' command is executed.
+22:35:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:35:11 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:35:11 INFO  : 'jtag frequency' command is executed.
+22:35:11 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+22:35:11 INFO  : Context for 'APU' is selected.
+22:35:12 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+22:35:12 INFO  : 'configparams force-mem-access 1' command is executed.
+22:35:12 INFO  : Context for 'APU' is selected.
+22:35:12 INFO  : 'stop' command is executed.
+22:35:12 INFO  : 'ps7_init' command is executed.
+22:35:12 INFO  : 'ps7_post_config' command is executed.
+22:35:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:35:12 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:35:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:35:13 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:35:13 INFO  : 'configparams force-mem-access 0' command is executed.
+22:35:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:35:13 INFO  : Memory regions updated for context APU
+22:35:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:35:13 INFO  : 'con' command is executed.
+22:35:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+22:35:13 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+22:35:24 INFO  : Disconnected from the channel tcfchan#88.
+22:35:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+22:35:25 INFO  : 'fpga -state' command is executed.
+22:35:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:35:25 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:35:25 INFO  : 'jtag frequency' command is executed.
+22:35:25 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+22:35:25 INFO  : Context for 'APU' is selected.
+22:35:26 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+22:35:26 INFO  : 'configparams force-mem-access 1' command is executed.
+22:35:26 INFO  : Context for 'APU' is selected.
+22:35:26 INFO  : 'stop' command is executed.
+22:35:27 INFO  : 'ps7_init' command is executed.
+22:35:27 INFO  : 'ps7_post_config' command is executed.
+22:35:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:35:27 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:35:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:35:27 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:35:27 INFO  : 'configparams force-mem-access 0' command is executed.
+22:35:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:35:27 INFO  : Memory regions updated for context APU
+22:35:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:35:27 INFO  : 'con' command is executed.
+22:35:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+22:35:27 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+22:35:38 INFO  : Disconnected from the channel tcfchan#89.
+22:35:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+22:35:39 INFO  : 'fpga -state' command is executed.
+22:35:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:35:39 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:35:39 INFO  : 'jtag frequency' command is executed.
+22:35:39 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+22:35:39 INFO  : Context for 'APU' is selected.
+22:35:40 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+22:35:40 INFO  : 'configparams force-mem-access 1' command is executed.
+22:35:40 INFO  : Context for 'APU' is selected.
+22:35:40 INFO  : 'stop' command is executed.
+22:35:41 INFO  : 'ps7_init' command is executed.
+22:35:41 INFO  : 'ps7_post_config' command is executed.
+22:35:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:35:41 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:35:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:35:41 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:35:41 INFO  : 'configparams force-mem-access 0' command is executed.
+22:35:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:35:41 INFO  : Memory regions updated for context APU
+22:35:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:35:41 INFO  : 'con' command is executed.
+22:35:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+22:35:41 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+22:36:04 INFO  : Disconnected from the channel tcfchan#90.
+22:36:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+22:36:05 INFO  : 'fpga -state' command is executed.
+22:36:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:36:05 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:36:05 INFO  : 'jtag frequency' command is executed.
+22:36:05 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+22:36:05 INFO  : Context for 'APU' is selected.
+22:36:06 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+22:36:06 INFO  : 'configparams force-mem-access 1' command is executed.
+22:36:06 INFO  : Context for 'APU' is selected.
+22:36:06 INFO  : 'stop' command is executed.
+22:36:07 INFO  : 'ps7_init' command is executed.
+22:36:07 INFO  : 'ps7_post_config' command is executed.
+22:36:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:36:07 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:36:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:36:07 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:36:07 INFO  : 'configparams force-mem-access 0' command is executed.
+22:36:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:36:07 INFO  : Memory regions updated for context APU
+22:36:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:36:07 INFO  : 'con' command is executed.
+22:36:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+22:36:07 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+22:36:35 INFO  : Disconnected from the channel tcfchan#91.
+22:36:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+22:36:36 INFO  : 'fpga -state' command is executed.
+22:36:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:36:37 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:36:37 INFO  : 'jtag frequency' command is executed.
+22:36:37 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+22:36:37 INFO  : Context for 'APU' is selected.
+22:36:38 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+22:36:38 INFO  : 'configparams force-mem-access 1' command is executed.
+22:36:38 INFO  : Context for 'APU' is selected.
+22:36:38 INFO  : 'stop' command is executed.
+22:36:38 INFO  : 'ps7_init' command is executed.
+22:36:38 INFO  : 'ps7_post_config' command is executed.
+22:36:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:36:38 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:36:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:36:38 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:36:38 INFO  : 'configparams force-mem-access 0' command is executed.
+22:36:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:36:38 INFO  : Memory regions updated for context APU
+22:36:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:36:38 INFO  : 'con' command is executed.
+22:36:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+22:36:38 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+22:37:13 INFO  : Disconnected from the channel tcfchan#92.
+22:37:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+22:37:14 INFO  : 'fpga -state' command is executed.
+22:37:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:37:15 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:37:15 INFO  : 'jtag frequency' command is executed.
+22:37:15 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+22:37:15 INFO  : Context for 'APU' is selected.
+22:37:16 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+22:37:16 INFO  : 'configparams force-mem-access 1' command is executed.
+22:37:16 INFO  : Context for 'APU' is selected.
+22:37:16 INFO  : 'stop' command is executed.
+22:37:16 INFO  : 'ps7_init' command is executed.
+22:37:16 INFO  : 'ps7_post_config' command is executed.
+22:37:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:37:16 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:37:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:37:16 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:37:16 INFO  : 'configparams force-mem-access 0' command is executed.
+22:37:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:37:16 INFO  : Memory regions updated for context APU
+22:37:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:37:16 INFO  : 'con' command is executed.
+22:37:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+22:37:16 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+22:37:29 INFO  : Disconnected from the channel tcfchan#93.
+22:37:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+22:37:30 INFO  : 'fpga -state' command is executed.
+22:37:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:37:30 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:37:30 INFO  : 'jtag frequency' command is executed.
+22:37:30 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+22:37:30 INFO  : Context for 'APU' is selected.
+22:37:31 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+22:37:31 INFO  : 'configparams force-mem-access 1' command is executed.
+22:37:31 INFO  : Context for 'APU' is selected.
+22:37:31 INFO  : 'stop' command is executed.
+22:37:31 INFO  : 'ps7_init' command is executed.
+22:37:31 INFO  : 'ps7_post_config' command is executed.
+22:37:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:37:31 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:37:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:37:31 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:37:31 INFO  : 'configparams force-mem-access 0' command is executed.
+22:37:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:37:31 INFO  : Memory regions updated for context APU
+22:37:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:37:32 INFO  : 'con' command is executed.
+22:37:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+22:37:32 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+22:37:53 INFO  : Disconnected from the channel tcfchan#94.
+22:37:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+22:37:54 INFO  : 'fpga -state' command is executed.
+22:37:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:37:55 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:37:55 INFO  : 'jtag frequency' command is executed.
+22:37:55 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+22:37:55 INFO  : Context for 'APU' is selected.
+22:37:56 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+22:37:56 INFO  : 'configparams force-mem-access 1' command is executed.
+22:37:56 INFO  : Context for 'APU' is selected.
+22:37:56 INFO  : 'stop' command is executed.
+22:37:56 INFO  : 'ps7_init' command is executed.
+22:37:56 INFO  : 'ps7_post_config' command is executed.
+22:37:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:37:56 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:37:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:37:56 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:37:56 INFO  : 'configparams force-mem-access 0' command is executed.
+22:37:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:37:56 INFO  : Memory regions updated for context APU
+22:37:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:37:56 INFO  : 'con' command is executed.
+22:37:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+22:37:56 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+22:48:47 INFO  : Disconnected from the channel tcfchan#95.
+22:48:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+22:48:48 INFO  : 'fpga -state' command is executed.
+22:48:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:48:48 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:48:48 INFO  : 'jtag frequency' command is executed.
+22:48:48 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+22:48:48 INFO  : Context for 'APU' is selected.
+22:48:49 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+22:48:49 INFO  : 'configparams force-mem-access 1' command is executed.
+22:48:49 INFO  : Context for 'APU' is selected.
+22:48:49 INFO  : 'stop' command is executed.
+22:48:50 INFO  : 'ps7_init' command is executed.
+22:48:50 INFO  : 'ps7_post_config' command is executed.
+22:48:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:48:50 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:48:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:48:50 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:48:50 INFO  : 'configparams force-mem-access 0' command is executed.
+22:48:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:48:50 INFO  : Memory regions updated for context APU
+22:48:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:48:50 INFO  : 'con' command is executed.
+22:48:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+22:48:50 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+22:51:02 INFO  : Disconnected from the channel tcfchan#96.
+22:51:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+22:51:03 INFO  : 'fpga -state' command is executed.
+22:51:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:51:03 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:51:03 INFO  : 'jtag frequency' command is executed.
+22:51:03 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+22:51:03 INFO  : Context for 'APU' is selected.
+22:51:04 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+22:51:04 INFO  : 'configparams force-mem-access 1' command is executed.
+22:51:04 INFO  : Context for 'APU' is selected.
+22:51:04 INFO  : 'stop' command is executed.
+22:51:05 INFO  : 'ps7_init' command is executed.
+22:51:05 INFO  : 'ps7_post_config' command is executed.
+22:51:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:51:05 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:51:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:51:05 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:51:05 INFO  : 'configparams force-mem-access 0' command is executed.
+22:51:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:51:05 INFO  : Memory regions updated for context APU
+22:51:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:51:05 INFO  : 'con' command is executed.
+22:51:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+22:51:05 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+22:51:34 INFO  : Disconnected from the channel tcfchan#97.
+22:51:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+22:51:35 INFO  : 'fpga -state' command is executed.
+22:51:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:51:35 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:51:35 INFO  : 'jtag frequency' command is executed.
+22:51:35 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+22:51:35 INFO  : Context for 'APU' is selected.
+22:51:36 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+22:51:36 INFO  : 'configparams force-mem-access 1' command is executed.
+22:51:36 INFO  : Context for 'APU' is selected.
+22:51:36 INFO  : 'stop' command is executed.
+22:51:36 INFO  : 'ps7_init' command is executed.
+22:51:36 INFO  : 'ps7_post_config' command is executed.
+22:51:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:51:36 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:51:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:51:37 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:51:37 INFO  : 'configparams force-mem-access 0' command is executed.
+22:51:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:51:37 INFO  : Memory regions updated for context APU
+22:51:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:51:37 INFO  : 'con' command is executed.
+22:51:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+22:51:37 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+22:52:12 INFO  : Disconnected from the channel tcfchan#98.
+22:52:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+22:52:13 INFO  : 'fpga -state' command is executed.
+22:52:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:52:13 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:52:13 INFO  : 'jtag frequency' command is executed.
+22:52:13 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+22:52:13 INFO  : Context for 'APU' is selected.
+22:52:14 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+22:52:14 INFO  : 'configparams force-mem-access 1' command is executed.
+22:52:14 INFO  : Context for 'APU' is selected.
+22:52:14 INFO  : 'stop' command is executed.
+22:52:15 INFO  : 'ps7_init' command is executed.
+22:52:15 INFO  : 'ps7_post_config' command is executed.
+22:52:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:52:15 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:52:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:52:15 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:52:15 INFO  : 'configparams force-mem-access 0' command is executed.
+22:52:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:52:15 INFO  : Memory regions updated for context APU
+22:52:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:52:15 INFO  : 'con' command is executed.
+22:52:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+22:52:15 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+22:52:37 INFO  : Disconnected from the channel tcfchan#99.
+22:52:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+22:52:38 INFO  : 'fpga -state' command is executed.
+22:52:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:52:38 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:52:38 INFO  : 'jtag frequency' command is executed.
+22:52:38 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+22:52:38 INFO  : Context for 'APU' is selected.
+22:52:39 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+22:52:39 INFO  : 'configparams force-mem-access 1' command is executed.
+22:52:39 INFO  : Context for 'APU' is selected.
+22:52:39 INFO  : 'stop' command is executed.
+22:52:39 INFO  : 'ps7_init' command is executed.
+22:52:39 INFO  : 'ps7_post_config' command is executed.
+22:52:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:52:39 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:52:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:52:40 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:52:40 INFO  : 'configparams force-mem-access 0' command is executed.
+22:52:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:52:40 INFO  : Memory regions updated for context APU
+22:52:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:52:40 INFO  : 'con' command is executed.
+22:52:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+22:52:40 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+22:53:26 INFO  : Disconnected from the channel tcfchan#100.
+22:54:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+22:54:14 INFO  : 'fpga -state' command is executed.
+22:54:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:54:14 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:54:14 INFO  : 'jtag frequency' command is executed.
+22:54:14 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+22:54:14 INFO  : Context for 'APU' is selected.
+22:54:15 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+22:54:15 INFO  : 'configparams force-mem-access 1' command is executed.
+22:54:15 INFO  : Context for 'APU' is selected.
+22:54:15 INFO  : 'stop' command is executed.
+22:54:15 INFO  : 'ps7_init' command is executed.
+22:54:15 INFO  : 'ps7_post_config' command is executed.
+22:54:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:54:15 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:54:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:54:15 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:54:15 INFO  : 'configparams force-mem-access 0' command is executed.
+22:54:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:54:15 INFO  : Memory regions updated for context APU
+22:54:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:54:15 INFO  : 'con' command is executed.
+22:54:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+22:54:15 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+22:54:32 INFO  : Disconnected from the channel tcfchan#101.
+22:54:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+22:54:33 INFO  : 'fpga -state' command is executed.
+22:54:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:54:33 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:54:33 INFO  : 'jtag frequency' command is executed.
+22:54:33 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+22:54:33 INFO  : Context for 'APU' is selected.
+22:54:34 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+22:54:34 INFO  : 'configparams force-mem-access 1' command is executed.
+22:54:34 INFO  : Context for 'APU' is selected.
+22:54:34 INFO  : 'stop' command is executed.
+22:54:34 INFO  : 'ps7_init' command is executed.
+22:54:34 INFO  : 'ps7_post_config' command is executed.
+22:54:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:54:34 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:54:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:54:34 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:54:34 INFO  : 'configparams force-mem-access 0' command is executed.
+22:54:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:54:34 INFO  : Memory regions updated for context APU
+22:54:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:54:34 INFO  : 'con' command is executed.
+22:54:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+22:54:34 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+22:54:49 INFO  : Disconnected from the channel tcfchan#102.
+22:54:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+22:54:50 INFO  : 'fpga -state' command is executed.
+22:54:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:54:50 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:54:50 INFO  : 'jtag frequency' command is executed.
+22:54:50 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+22:54:50 INFO  : Context for 'APU' is selected.
+22:54:51 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+22:54:51 INFO  : 'configparams force-mem-access 1' command is executed.
+22:54:51 INFO  : Context for 'APU' is selected.
+22:54:51 INFO  : 'stop' command is executed.
+22:54:51 INFO  : 'ps7_init' command is executed.
+22:54:51 INFO  : 'ps7_post_config' command is executed.
+22:54:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:54:51 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:54:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:54:51 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:54:51 INFO  : 'configparams force-mem-access 0' command is executed.
+22:54:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:54:51 INFO  : Memory regions updated for context APU
+22:54:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:54:51 INFO  : 'con' command is executed.
+22:54:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+22:54:51 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+22:55:26 INFO  : Disconnected from the channel tcfchan#103.
+22:55:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+22:55:27 INFO  : 'fpga -state' command is executed.
+22:55:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:55:27 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:55:27 INFO  : 'jtag frequency' command is executed.
+22:55:27 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+22:55:27 INFO  : Context for 'APU' is selected.
+22:55:28 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+22:55:28 INFO  : 'configparams force-mem-access 1' command is executed.
+22:55:28 INFO  : Context for 'APU' is selected.
+22:55:28 INFO  : 'stop' command is executed.
+22:55:28 INFO  : 'ps7_init' command is executed.
+22:55:28 INFO  : 'ps7_post_config' command is executed.
+22:55:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:55:28 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:55:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:55:29 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:55:29 INFO  : 'configparams force-mem-access 0' command is executed.
+22:55:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:55:29 INFO  : Memory regions updated for context APU
+22:55:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:55:29 INFO  : 'con' command is executed.
+22:55:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+22:55:29 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+22:55:37 INFO  : Disconnected from the channel tcfchan#104.
+22:55:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+22:55:39 INFO  : 'fpga -state' command is executed.
+22:55:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:55:39 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:55:39 INFO  : 'jtag frequency' command is executed.
+22:55:39 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+22:55:39 INFO  : Context for 'APU' is selected.
+22:55:40 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+22:55:40 INFO  : 'configparams force-mem-access 1' command is executed.
+22:55:40 INFO  : Context for 'APU' is selected.
+22:55:40 INFO  : 'stop' command is executed.
+22:55:40 INFO  : 'ps7_init' command is executed.
+22:55:40 INFO  : 'ps7_post_config' command is executed.
+22:55:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:55:40 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:55:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:55:40 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:55:40 INFO  : 'configparams force-mem-access 0' command is executed.
+22:55:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:55:40 INFO  : Memory regions updated for context APU
+22:55:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:55:40 INFO  : 'con' command is executed.
+22:55:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+22:55:40 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+22:55:58 INFO  : Disconnected from the channel tcfchan#105.
+22:55:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+22:55:59 INFO  : 'fpga -state' command is executed.
+22:55:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:55:59 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:55:59 INFO  : 'jtag frequency' command is executed.
+22:55:59 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+22:55:59 INFO  : Context for 'APU' is selected.
+22:56:00 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+22:56:00 INFO  : 'configparams force-mem-access 1' command is executed.
+22:56:00 INFO  : Context for 'APU' is selected.
+22:56:00 INFO  : 'stop' command is executed.
+22:56:00 INFO  : 'ps7_init' command is executed.
+22:56:00 INFO  : 'ps7_post_config' command is executed.
+22:56:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:56:00 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:56:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:56:00 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:56:00 INFO  : 'configparams force-mem-access 0' command is executed.
+22:56:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:56:00 INFO  : Memory regions updated for context APU
+22:56:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:56:01 INFO  : 'con' command is executed.
+22:56:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+22:56:01 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+22:57:01 INFO  : Disconnected from the channel tcfchan#106.
+22:57:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+22:57:02 INFO  : 'fpga -state' command is executed.
+22:57:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:57:02 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:57:02 INFO  : 'jtag frequency' command is executed.
+22:57:02 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+22:57:02 INFO  : Context for 'APU' is selected.
+22:57:03 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+22:57:03 INFO  : 'configparams force-mem-access 1' command is executed.
+22:57:03 INFO  : Context for 'APU' is selected.
+22:57:03 INFO  : 'stop' command is executed.
+22:57:04 INFO  : 'ps7_init' command is executed.
+22:57:04 INFO  : 'ps7_post_config' command is executed.
+22:57:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:57:04 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:57:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:57:04 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:57:04 INFO  : 'configparams force-mem-access 0' command is executed.
+22:57:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:57:04 INFO  : Memory regions updated for context APU
+22:57:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:57:04 INFO  : 'con' command is executed.
+22:57:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+22:57:04 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+23:02:22 INFO  : Disconnected from the channel tcfchan#107.
+23:02:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+23:02:23 INFO  : 'fpga -state' command is executed.
+23:02:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:02:23 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+23:02:23 INFO  : 'jtag frequency' command is executed.
+23:02:23 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+23:02:23 INFO  : Context for 'APU' is selected.
+23:02:24 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+23:02:24 INFO  : 'configparams force-mem-access 1' command is executed.
+23:02:24 INFO  : Context for 'APU' is selected.
+23:02:24 INFO  : 'stop' command is executed.
+23:02:25 INFO  : 'ps7_init' command is executed.
+23:02:25 INFO  : 'ps7_post_config' command is executed.
+23:02:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:02:25 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:02:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:02:25 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:02:25 INFO  : 'configparams force-mem-access 0' command is executed.
+23:02:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:02:25 INFO  : Memory regions updated for context APU
+23:02:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:02:25 INFO  : 'con' command is executed.
+23:02:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+23:02:25 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+23:05:46 INFO  : Disconnected from the channel tcfchan#108.
+23:05:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+23:05:47 INFO  : 'fpga -state' command is executed.
+23:05:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:05:47 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+23:05:47 INFO  : 'jtag frequency' command is executed.
+23:05:47 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+23:05:47 INFO  : Context for 'APU' is selected.
+23:05:48 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+23:05:48 INFO  : 'configparams force-mem-access 1' command is executed.
+23:05:48 INFO  : Context for 'APU' is selected.
+23:05:48 INFO  : 'stop' command is executed.
+23:05:48 INFO  : 'ps7_init' command is executed.
+23:05:48 INFO  : 'ps7_post_config' command is executed.
+23:05:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:05:49 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:05:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:05:49 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:05:49 INFO  : 'configparams force-mem-access 0' command is executed.
+23:05:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:05:49 INFO  : Memory regions updated for context APU
+23:05:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:05:49 INFO  : 'con' command is executed.
+23:05:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+23:05:49 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+23:13:39 INFO  : Disconnected from the channel tcfchan#109.
+23:13:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+23:13:40 INFO  : 'fpga -state' command is executed.
+23:13:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:13:40 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+23:13:40 INFO  : 'jtag frequency' command is executed.
+23:13:40 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+23:13:40 INFO  : Context for 'APU' is selected.
+23:13:41 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+23:13:41 INFO  : 'configparams force-mem-access 1' command is executed.
+23:13:41 INFO  : Context for 'APU' is selected.
+23:13:41 INFO  : 'stop' command is executed.
+23:13:41 INFO  : 'ps7_init' command is executed.
+23:13:41 INFO  : 'ps7_post_config' command is executed.
+23:13:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:13:41 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:13:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:13:41 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:13:41 INFO  : 'configparams force-mem-access 0' command is executed.
+23:13:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:13:42 INFO  : Memory regions updated for context APU
+23:13:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:13:42 INFO  : 'con' command is executed.
+23:13:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+23:13:42 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+23:17:59 INFO  : Disconnected from the channel tcfchan#110.
+23:18:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+23:18:00 INFO  : 'fpga -state' command is executed.
+23:18:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:18:00 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+23:18:00 INFO  : 'jtag frequency' command is executed.
+23:18:00 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+23:18:00 INFO  : Context for 'APU' is selected.
+23:18:01 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+23:18:01 INFO  : 'configparams force-mem-access 1' command is executed.
+23:18:01 INFO  : Context for 'APU' is selected.
+23:18:01 INFO  : 'stop' command is executed.
+23:18:02 INFO  : 'ps7_init' command is executed.
+23:18:02 INFO  : 'ps7_post_config' command is executed.
+23:18:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:18:02 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:18:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:18:02 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:18:02 INFO  : 'configparams force-mem-access 0' command is executed.
+23:18:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:18:02 INFO  : Memory regions updated for context APU
+23:18:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:18:02 INFO  : 'con' command is executed.
+23:18:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+23:18:02 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+23:20:27 INFO  : Disconnected from the channel tcfchan#111.
+23:20:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+23:20:28 INFO  : 'fpga -state' command is executed.
+23:20:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:20:28 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+23:20:28 INFO  : 'jtag frequency' command is executed.
+23:20:28 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+23:20:28 INFO  : Context for 'APU' is selected.
+23:20:29 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+23:20:29 INFO  : 'configparams force-mem-access 1' command is executed.
+23:20:29 INFO  : Context for 'APU' is selected.
+23:20:29 INFO  : 'stop' command is executed.
+23:20:29 INFO  : 'ps7_init' command is executed.
+23:20:29 INFO  : 'ps7_post_config' command is executed.
+23:20:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:20:29 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:20:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:20:29 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:20:29 INFO  : 'configparams force-mem-access 0' command is executed.
+23:20:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:20:29 INFO  : Memory regions updated for context APU
+23:20:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:20:29 INFO  : 'con' command is executed.
+23:20:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+23:20:29 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+23:21:33 INFO  : Disconnected from the channel tcfchan#112.
+23:21:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+23:21:49 INFO  : 'fpga -state' command is executed.
+23:21:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:21:49 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+23:21:49 INFO  : 'jtag frequency' command is executed.
+23:21:49 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+23:21:49 INFO  : Context for 'APU' is selected.
+23:21:50 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+23:21:50 INFO  : 'configparams force-mem-access 1' command is executed.
+23:21:50 INFO  : Context for 'APU' is selected.
+23:21:50 INFO  : 'stop' command is executed.
+23:21:50 INFO  : 'ps7_init' command is executed.
+23:21:50 INFO  : 'ps7_post_config' command is executed.
+23:21:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:21:50 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:21:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:21:50 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:21:50 INFO  : 'configparams force-mem-access 0' command is executed.
+23:21:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:21:50 INFO  : Memory regions updated for context APU
+23:21:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:21:50 INFO  : 'con' command is executed.
+23:21:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+23:21:50 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+23:22:10 INFO  : Disconnected from the channel tcfchan#113.
+23:22:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+23:22:11 INFO  : 'fpga -state' command is executed.
+23:22:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:22:11 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+23:22:11 INFO  : 'jtag frequency' command is executed.
+23:22:11 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+23:22:11 INFO  : Context for 'APU' is selected.
+23:22:12 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+23:22:12 INFO  : 'configparams force-mem-access 1' command is executed.
+23:22:12 INFO  : Context for 'APU' is selected.
+23:22:12 INFO  : 'stop' command is executed.
+23:22:13 INFO  : 'ps7_init' command is executed.
+23:22:13 INFO  : 'ps7_post_config' command is executed.
+23:22:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:22:13 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:22:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:22:13 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:22:13 INFO  : 'configparams force-mem-access 0' command is executed.
+23:22:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:22:13 INFO  : Memory regions updated for context APU
+23:22:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:22:13 INFO  : 'con' command is executed.
+23:22:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+23:22:13 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+23:22:29 INFO  : Disconnected from the channel tcfchan#114.
+23:22:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+23:22:30 INFO  : 'fpga -state' command is executed.
+23:22:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:22:30 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+23:22:30 INFO  : 'jtag frequency' command is executed.
+23:22:30 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+23:22:30 INFO  : Context for 'APU' is selected.
+23:22:31 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+23:22:31 INFO  : 'configparams force-mem-access 1' command is executed.
+23:22:31 INFO  : Context for 'APU' is selected.
+23:22:31 INFO  : 'stop' command is executed.
+23:22:31 INFO  : 'ps7_init' command is executed.
+23:22:31 INFO  : 'ps7_post_config' command is executed.
+23:22:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:22:31 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:22:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:22:31 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:22:31 INFO  : 'configparams force-mem-access 0' command is executed.
+23:22:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:22:31 INFO  : Memory regions updated for context APU
+23:22:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:22:31 INFO  : 'con' command is executed.
+23:22:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+23:22:31 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+23:23:06 INFO  : Disconnected from the channel tcfchan#115.
+23:23:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+23:23:07 INFO  : 'fpga -state' command is executed.
+23:23:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:23:07 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+23:23:07 INFO  : 'jtag frequency' command is executed.
+23:23:07 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+23:23:07 INFO  : Context for 'APU' is selected.
+23:23:08 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+23:23:08 INFO  : 'configparams force-mem-access 1' command is executed.
+23:23:08 INFO  : Context for 'APU' is selected.
+23:23:08 INFO  : 'stop' command is executed.
+23:23:08 INFO  : 'ps7_init' command is executed.
+23:23:08 INFO  : 'ps7_post_config' command is executed.
+23:23:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:23:09 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:23:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:23:09 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:23:09 INFO  : 'configparams force-mem-access 0' command is executed.
+23:23:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:23:09 INFO  : Memory regions updated for context APU
+23:23:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:23:09 INFO  : 'con' command is executed.
+23:23:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+23:23:09 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+23:23:23 INFO  : Disconnected from the channel tcfchan#116.
+23:23:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+23:23:24 INFO  : 'fpga -state' command is executed.
+23:23:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:23:24 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+23:23:24 INFO  : 'jtag frequency' command is executed.
+23:23:24 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+23:23:24 INFO  : Context for 'APU' is selected.
+23:23:25 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+23:23:25 INFO  : 'configparams force-mem-access 1' command is executed.
+23:23:25 INFO  : Context for 'APU' is selected.
+23:23:25 INFO  : 'stop' command is executed.
+23:23:25 INFO  : 'ps7_init' command is executed.
+23:23:25 INFO  : 'ps7_post_config' command is executed.
+23:23:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:23:25 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:23:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:23:25 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:23:25 INFO  : 'configparams force-mem-access 0' command is executed.
+23:23:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:23:25 INFO  : Memory regions updated for context APU
+23:23:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:23:25 INFO  : 'con' command is executed.
+23:23:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+23:23:25 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+23:23:38 INFO  : Disconnected from the channel tcfchan#117.
+23:23:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+23:23:39 INFO  : 'fpga -state' command is executed.
+23:23:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:23:39 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+23:23:39 INFO  : 'jtag frequency' command is executed.
+23:23:39 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+23:23:39 INFO  : Context for 'APU' is selected.
+23:23:40 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+23:23:40 INFO  : 'configparams force-mem-access 1' command is executed.
+23:23:40 INFO  : Context for 'APU' is selected.
+23:23:40 INFO  : 'stop' command is executed.
+23:23:40 INFO  : 'ps7_init' command is executed.
+23:23:40 INFO  : 'ps7_post_config' command is executed.
+23:23:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:23:40 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:23:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:23:41 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:23:41 INFO  : 'configparams force-mem-access 0' command is executed.
+23:23:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:23:41 INFO  : Memory regions updated for context APU
+23:23:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:23:41 INFO  : 'con' command is executed.
+23:23:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+23:23:41 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+23:24:20 INFO  : Disconnected from the channel tcfchan#118.
+23:24:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+23:24:21 INFO  : 'fpga -state' command is executed.
+23:24:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:24:21 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+23:24:21 INFO  : 'jtag frequency' command is executed.
+23:24:22 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+23:24:22 INFO  : Context for 'APU' is selected.
+23:24:22 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+23:24:22 INFO  : 'configparams force-mem-access 1' command is executed.
+23:24:22 INFO  : Context for 'APU' is selected.
+23:24:22 INFO  : 'stop' command is executed.
+23:24:23 INFO  : 'ps7_init' command is executed.
+23:24:23 INFO  : 'ps7_post_config' command is executed.
+23:24:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:24:23 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:24:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:24:23 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:24:23 INFO  : 'configparams force-mem-access 0' command is executed.
+23:24:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:24:23 INFO  : Memory regions updated for context APU
+23:24:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:24:23 INFO  : 'con' command is executed.
+23:24:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+23:24:23 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+23:27:36 INFO  : Disconnected from the channel tcfchan#119.
+23:27:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+23:27:37 INFO  : 'fpga -state' command is executed.
+23:27:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:27:37 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+23:27:37 INFO  : 'jtag frequency' command is executed.
+23:27:37 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+23:27:37 INFO  : Context for 'APU' is selected.
+23:27:38 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+23:27:38 INFO  : 'configparams force-mem-access 1' command is executed.
+23:27:38 INFO  : Context for 'APU' is selected.
+23:27:38 INFO  : 'stop' command is executed.
+23:27:38 INFO  : 'ps7_init' command is executed.
+23:27:38 INFO  : 'ps7_post_config' command is executed.
+23:27:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:27:38 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:27:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:27:39 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:27:39 INFO  : 'configparams force-mem-access 0' command is executed.
+23:27:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:27:39 INFO  : Memory regions updated for context APU
+23:27:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:27:39 INFO  : 'con' command is executed.
+23:27:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+23:27:39 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+23:28:14 INFO  : Disconnected from the channel tcfchan#120.
+23:28:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+23:28:15 INFO  : 'fpga -state' command is executed.
+23:28:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:28:15 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+23:28:15 INFO  : 'jtag frequency' command is executed.
+23:28:15 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+23:28:15 INFO  : Context for 'APU' is selected.
+23:28:16 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+23:28:16 INFO  : 'configparams force-mem-access 1' command is executed.
+23:28:16 INFO  : Context for 'APU' is selected.
+23:28:16 INFO  : 'stop' command is executed.
+23:28:16 INFO  : 'ps7_init' command is executed.
+23:28:16 INFO  : 'ps7_post_config' command is executed.
+23:28:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:28:16 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:28:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:28:16 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:28:16 INFO  : 'configparams force-mem-access 0' command is executed.
+23:28:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:28:16 INFO  : Memory regions updated for context APU
+23:28:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:28:16 INFO  : 'con' command is executed.
+23:28:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+23:28:16 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+23:30:27 INFO  : Disconnected from the channel tcfchan#121.
+23:30:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+23:30:29 INFO  : 'fpga -state' command is executed.
+23:30:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:30:29 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+23:30:29 INFO  : 'jtag frequency' command is executed.
+23:30:29 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+23:30:29 INFO  : Context for 'APU' is selected.
+23:30:30 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+23:30:30 INFO  : 'configparams force-mem-access 1' command is executed.
+23:30:30 INFO  : Context for 'APU' is selected.
+23:30:30 INFO  : 'stop' command is executed.
+23:30:30 INFO  : 'ps7_init' command is executed.
+23:30:30 INFO  : 'ps7_post_config' command is executed.
+23:30:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:30:30 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:30:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:30:30 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:30:30 INFO  : 'configparams force-mem-access 0' command is executed.
+23:30:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:30:30 INFO  : Memory regions updated for context APU
+23:30:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:30:30 INFO  : 'con' command is executed.
+23:30:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+23:30:30 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+23:33:08 INFO  : Disconnected from the channel tcfchan#122.
+23:33:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+23:33:09 INFO  : 'fpga -state' command is executed.
+23:33:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:33:09 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+23:33:09 INFO  : 'jtag frequency' command is executed.
+23:33:09 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+23:33:09 INFO  : Context for 'APU' is selected.
+23:33:10 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+23:33:10 INFO  : 'configparams force-mem-access 1' command is executed.
+23:33:10 INFO  : Context for 'APU' is selected.
+23:33:10 INFO  : 'stop' command is executed.
+23:33:11 INFO  : 'ps7_init' command is executed.
+23:33:11 INFO  : 'ps7_post_config' command is executed.
+23:33:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:33:11 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:33:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:33:11 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:33:11 INFO  : 'configparams force-mem-access 0' command is executed.
+23:33:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:33:11 INFO  : Memory regions updated for context APU
+23:33:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:33:11 INFO  : 'con' command is executed.
+23:33:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+23:33:11 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+23:33:26 INFO  : Disconnected from the channel tcfchan#123.
+23:33:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+23:33:27 INFO  : 'fpga -state' command is executed.
+23:33:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:33:27 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+23:33:27 INFO  : 'jtag frequency' command is executed.
+23:33:27 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+23:33:27 INFO  : Context for 'APU' is selected.
+23:33:28 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+23:33:28 INFO  : 'configparams force-mem-access 1' command is executed.
+23:33:28 INFO  : Context for 'APU' is selected.
+23:33:28 INFO  : 'stop' command is executed.
+23:33:28 INFO  : 'ps7_init' command is executed.
+23:33:28 INFO  : 'ps7_post_config' command is executed.
+23:33:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:33:28 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:33:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:33:29 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:33:29 INFO  : 'configparams force-mem-access 0' command is executed.
+23:33:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:33:29 INFO  : Memory regions updated for context APU
+23:33:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:33:29 INFO  : 'con' command is executed.
+23:33:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+23:33:29 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'
+23:34:35 INFO  : Disconnected from the channel tcfchan#124.
+23:34:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0} -index 1' command is executed.
+23:34:36 INFO  : 'fpga -state' command is executed.
+23:34:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:34:36 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+23:34:36 INFO  : 'jtag frequency' command is executed.
+23:34:36 INFO  : Sourcing of '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl' is done.
+23:34:36 INFO  : Context for 'APU' is selected.
+23:34:37 INFO  : Hardware design information is loaded from '/home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf'.
+23:34:37 INFO  : 'configparams force-mem-access 1' command is executed.
+23:34:37 INFO  : Context for 'APU' is selected.
+23:34:37 INFO  : 'stop' command is executed.
+23:34:37 INFO  : 'ps7_init' command is executed.
+23:34:37 INFO  : 'ps7_post_config' command is executed.
+23:34:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:34:37 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+23:34:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:34:38 INFO  : The application '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:34:38 INFO  : 'configparams force-mem-access 0' command is executed.
+23:34:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+loadhw -hw /home/yz/Projects/musical-octo-robot/project_sw/hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+dow /home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:34:38 INFO  : Memory regions updated for context APU
+23:34:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:34:38 INFO  : 'con' command is executed.
+23:34:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
+con
+----------------End of Script----------------
+
+23:34:38 INFO  : Launch script is exported to file '/home/yz/Projects/musical-octo-robot/project_sw/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_sw_design.elf_on_local.tcl'

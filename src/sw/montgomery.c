@@ -147,33 +147,20 @@ void montMulOpt(uint32_t *a, uint32_t *b, uint32_t *n, uint32_t *n_prime,
         {
                 for (int j = 0; j < i; j++)
                 {
-//                        sum = t[0] + (uint64_t)(a[j]) * (uint64_t)(b[i - j]);
-                        sum = fast_calc(t[0], a[j], b[i - j]);
-//                        C = sum >> 32;
-//                        S = sum & 0x00000000FFFFFFFF;
-                        mov_CS(sum, &C, &S);
+                        fast_calc(t[0], a[j], b[i - j], &C, &S);
+//                        mov_CS(sum, &C, &S);
                         carry_addition(t, 1, C);
-//                        sum = S + (uint64_t)(m[j]) * (uint64_t)(n_ex[i - j]);
-                        sum = fast_calc(S, m[j], n_ex[i - j]);
-//                        C = sum >> 32;
-//                        S = sum & 0x00000000FFFFFFFF;
-                        mov_CS(sum, &C, &S);
+                        fast_calc(S, m[j], n_ex[i - j], &C, &S);
+//                        mov_CS(sum, &C, &S);
                         t[0] = S;
                         carry_addition(t, 1, C);
                 }
-//                sum = t[0] + (uint64_t)(a[i]) * (uint64_t)(b[0]);
-                sum = fast_calc(t[0], a[i], b[0]);
-//                C = sum >> 32;
-//                S = sum & 0x00000000FFFFFFFF;
-                mov_CS(sum, &C, &S);
+                fast_calc(t[0], a[i], b[0], &C, &S);
+//                mov_CS(sum, &C, &S);
                 carry_addition(t, 1, C);
-//                m[i] = (S * n_prime[0]) & 0x00000000FFFFFFFF;
-                m[i] = fast_calc(0, S, n_prime[0]);
-//                sum = S + (uint64_t)(m[i]) * (uint64_t)(n_ex[0]);
-                sum = fast_calc(S, m[i], n_ex[0]);
-//                C = sum >> 32;
-//                S = sum & 0x00000000FFFFFFFF;
-                mov_CS(sum, &C, &S);
+                m[i] = fast_mul(0, S, n_prime[0]);
+                fast_calc(S, m[i], n_ex[0], &C, &S);
+//                mov_CS(sum, &C, &S);
                 carry_addition(t, 1, C);
                 t[0] = t[1];
                 t[1] = t[2];
@@ -184,17 +171,11 @@ void montMulOpt(uint32_t *a, uint32_t *b, uint32_t *n, uint32_t *n_prime,
         {
                 for (int j = i - size + 1; j < size; j++)
                 {
-//                        sum = (uint64_t)t[0] + (uint64_t)a[j] * (uint64_t)b[i - j];
-                        sum = fast_calc(t[0], a[j], b[i-j]);
-//                        C = sum >> 32;
-//                        S = sum & 0x00000000FFFFFFFF;
-                        mov_CS(sum, &C, &S);
+                        fast_calc(t[0], a[j], b[i-j], &C, &S);
+//                        mov_CS(sum, &C, &S);
                         carry_addition(t, 1, C);
-//                        sum = (uint64_t)S + (uint64_t)m[j] * (uint64_t)n_ex[i - j];
-                        sum = fast_calc(S, m[j], n_ex[i-j]);
-//                        C = sum >> 32;
-//                        S = sum & 0x00000000FFFFFFFF;
-                        mov_CS(sum, &C, &S);
+                        fast_calc(S, m[j], n_ex[i-j], &C, &S);
+//                        mov_CS(sum, &C, &S);
                         t[0] = S;
                         carry_addition(t, 1, C);
                 }

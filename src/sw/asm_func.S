@@ -88,14 +88,28 @@ mov_CS:
 
 .text
 
+.global fast_mul
+.func fast_mul, fast_mul
+.type fast_mul, %function
+
+fast_mul:
+	mov r3, #0
+	umlal r0, r3, r1, r2
+	mov r1, r3
+	bx lr
+.endfunc
+
+.text
+
 .global fast_calc
 .func fast_calc, fast_calc
 .type fast_calc, %function
 
 fast_calc:
-	mov r3, #0
-	umlal r0, r3, r1, r2
-	mov r1, r3
+	mov r12, #0
+	umlal r0, r12, r1, r2
+	str r12, [r3]
+	str r0, [r3, #-4]
 	bx lr
 .endfunc
 

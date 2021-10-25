@@ -1,11 +1,25 @@
-22:22:57 **** Incremental Build of configuration Debug for project sw_design ****
+23:34:32 **** Incremental Build of configuration Release for project sw_design ****
 make pre-build main-build 
-make[1]: Map '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug' wordt binnengegaan
+make[1]: Map '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Release' wordt binnengegaan
 a9-linaro-pre-build-step
+ 
+Building file: ../src/asm_func.S
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -c -fmessage-length=0 -MT"src/asm_func.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hw_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/asm_func.d" -MT"src/asm_func.o" -o "src/asm_func.o" "../src/asm_func.S"
+Finished building: ../src/asm_func.S
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hw_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:64:11: warning: unused variable 'gt' [-Wunused-variable]
+  uint32_t gt[32] = { 0xb6d26cce, 0xed113311, 0x9a083aba, 0xe6646e47,
+           ^~
+Finished building: ../src/main.c
  
 Building file: ../src/montgomery.c
 Invoking: ARM v7 gcc compiler
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/montgomery.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hw_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/montgomery.d" -MT"src/montgomery.o" -o "src/montgomery.o" "../src/montgomery.c"
+arm-none-eabi-gcc -Wall -O3 -c -fmessage-length=0 -MT"src/montgomery.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hw_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/montgomery.d" -MT"src/montgomery.o" -o "src/montgomery.o" "../src/montgomery.c"
 ../src/montgomery.c: In function 'carry_addition':
 ../src/montgomery.c:19:29: warning: passing argument 2 of 'mov_CS' from incompatible pointer type [-Wincompatible-pointer-types]
                  mov_CS(sum, &C, &t[i]);
@@ -15,104 +29,107 @@ In file included from ../src/montgomery.c:6:0:
  void mov_CS(uint64_t sum, uint32_t* C, uint32_t* S);
       ^~~~~~
 ../src/montgomery.c: In function 'montMulOpt':
-../src/montgomery.c:151:47: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
-                         sum = fast_calc(t[0], a[j], b[i - j]);
+../src/montgomery.c:150:41: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+                         fast_calc(t[0], a[j], b[i - j], &C, &S);
+                                         ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:35:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S);
+          ^~~~~~~~~
+../src/montgomery.c:150:47: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+                         fast_calc(t[0], a[j], b[i - j], &C, &S);
                                                ^
 In file included from ../src/montgomery.c:6:0:
-../src/asm_func.h:32:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
- uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c);
+../src/asm_func.h:35:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S);
           ^~~~~~~~~
-../src/montgomery.c:151:53: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
-                         sum = fast_calc(t[0], a[j], b[i - j]);
-                                                     ^
+../src/montgomery.c:153:38: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+                         fast_calc(S, m[j], n_ex[i - j], &C, &S);
+                                      ^
 In file included from ../src/montgomery.c:6:0:
-../src/asm_func.h:32:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
- uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c);
+../src/asm_func.h:35:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S);
           ^~~~~~~~~
-../src/montgomery.c:157:44: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
-                         sum = fast_calc(S, m[j], n_ex[i - j]);
-                                            ^
+../src/montgomery.c:153:44: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+                         fast_calc(S, m[j], n_ex[i - j], &C, &S);
+                                            ^~~~
 In file included from ../src/montgomery.c:6:0:
-../src/asm_func.h:32:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
- uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c);
+../src/asm_func.h:35:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S);
           ^~~~~~~~~
-../src/montgomery.c:157:50: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
-                         sum = fast_calc(S, m[j], n_ex[i - j]);
-                                                  ^~~~
+../src/montgomery.c:158:33: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+                 fast_calc(t[0], a[i], b[0], &C, &S);
+                                 ^
 In file included from ../src/montgomery.c:6:0:
-../src/asm_func.h:32:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
- uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c);
+../src/asm_func.h:35:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S);
           ^~~~~~~~~
-../src/montgomery.c:165:39: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
-                 sum = fast_calc(t[0], a[i], b[0]);
+../src/montgomery.c:158:39: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+                 fast_calc(t[0], a[i], b[0], &C, &S);
                                        ^
 In file included from ../src/montgomery.c:6:0:
-../src/asm_func.h:32:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
- uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c);
+../src/asm_func.h:35:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S);
           ^~~~~~~~~
-../src/montgomery.c:165:45: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
-                 sum = fast_calc(t[0], a[i], b[0]);
-                                             ^
-In file included from ../src/montgomery.c:6:0:
-../src/asm_func.h:32:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
- uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c);
-          ^~~~~~~~~
-../src/montgomery.c:171:37: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
-                 m[i] = fast_calc(0, S, n_prime[0]);
-                                     ^
-In file included from ../src/montgomery.c:6:0:
-../src/asm_func.h:32:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
- uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c);
-          ^~~~~~~~~
-../src/montgomery.c:171:40: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
-                 m[i] = fast_calc(0, S, n_prime[0]);
-                                        ^~~~~~~
-In file included from ../src/montgomery.c:6:0:
-../src/asm_func.h:32:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
- uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c);
-          ^~~~~~~~~
-../src/montgomery.c:173:36: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
-                 sum = fast_calc(S, m[i], n_ex[0]);
+../src/montgomery.c:161:36: warning: passing argument 2 of 'fast_mul' makes pointer from integer without a cast [-Wint-conversion]
+                 m[i] = fast_mul(0, S, n_prime[0]);
                                     ^
 In file included from ../src/montgomery.c:6:0:
 ../src/asm_func.h:32:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
- uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c);
-          ^~~~~~~~~
-../src/montgomery.c:173:42: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
-                 sum = fast_calc(S, m[i], n_ex[0]);
-                                          ^~~~
+ uint64_t fast_mul(uint32_t a, uint32_t *b, uint32_t *c);
+          ^~~~~~~~
+../src/montgomery.c:161:39: warning: passing argument 3 of 'fast_mul' makes pointer from integer without a cast [-Wint-conversion]
+                 m[i] = fast_mul(0, S, n_prime[0]);
+                                       ^~~~~~~
 In file included from ../src/montgomery.c:6:0:
 ../src/asm_func.h:32:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
- uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c);
+ uint64_t fast_mul(uint32_t a, uint32_t *b, uint32_t *c);
+          ^~~~~~~~
+../src/montgomery.c:162:30: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+                 fast_calc(S, m[i], n_ex[0], &C, &S);
+                              ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:35:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S);
           ^~~~~~~~~
-../src/montgomery.c:188:47: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
-                         sum = fast_calc(t[0], a[j], b[i-j]);
+../src/montgomery.c:162:36: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+                 fast_calc(S, m[i], n_ex[0], &C, &S);
+                                    ^~~~
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:35:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S);
+          ^~~~~~~~~
+../src/montgomery.c:174:41: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+                         fast_calc(t[0], a[j], b[i-j], &C, &S);
+                                         ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:35:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S);
+          ^~~~~~~~~
+../src/montgomery.c:174:47: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+                         fast_calc(t[0], a[j], b[i-j], &C, &S);
                                                ^
 In file included from ../src/montgomery.c:6:0:
-../src/asm_func.h:32:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
- uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c);
+../src/asm_func.h:35:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S);
           ^~~~~~~~~
-../src/montgomery.c:188:53: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
-                         sum = fast_calc(t[0], a[j], b[i-j]);
-                                                     ^
+../src/montgomery.c:177:38: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+                         fast_calc(S, m[j], n_ex[i-j], &C, &S);
+                                      ^
 In file included from ../src/montgomery.c:6:0:
-../src/asm_func.h:32:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
- uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c);
+../src/asm_func.h:35:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S);
           ^~~~~~~~~
-../src/montgomery.c:194:44: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
-                         sum = fast_calc(S, m[j], n_ex[i-j]);
-                                            ^
+../src/montgomery.c:177:44: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+                         fast_calc(S, m[j], n_ex[i-j], &C, &S);
+                                            ^~~~
 In file included from ../src/montgomery.c:6:0:
-../src/asm_func.h:32:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
- uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c);
+../src/asm_func.h:35:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S);
           ^~~~~~~~~
-../src/montgomery.c:194:50: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
-                         sum = fast_calc(S, m[j], n_ex[i-j]);
-                                                  ^~~~
-In file included from ../src/montgomery.c:6:0:
-../src/asm_func.h:32:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
- uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c);
-          ^~~~~~~~~
+../src/montgomery.c:143:18: warning: unused variable 'sum' [-Wunused-variable]
+         uint64_t sum;
+                  ^~~
 Finished building: ../src/montgomery.c
  
 Building target: sw_design.elf
@@ -123,14 +140,14 @@ Finished building target: sw_design.elf
 Invoking: ARM v7 Print Size
 arm-none-eabi-size sw_design.elf  |tee "sw_design.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  83508	   3352	  23344	 110204	  1ae7c	sw_design.elf
+  84088	   3352	  23344	 110784	  1b0c0	sw_design.elf
 Finished building: sw_design.elf.size
  
-make[1]: Map '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug' wordt verlaten
-22:22:59 **** Incremental Build of configuration Debug for project sw_design ****
+make[1]: Map '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Release' wordt verlaten
+23:34:35 **** Incremental Build of configuration Release for project sw_design ****
 make pre-build main-build 
-make[1]: Map '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug' wordt binnengegaan
+make[1]: Map '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Release' wordt binnengegaan
 a9-linaro-pre-build-step
  
 make[1]: Er hoeft niets gedaan te worden voor 'main-build'.
-make[1]: Map '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug' wordt verlaten
+make[1]: Map '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Release' wordt verlaten

@@ -1,10 +1,10 @@
-22:22:59 **** Incremental Build of configuration Debug for project sw_design ****
+23:34:35 **** Incremental Build of configuration Release for project sw_design ****
 make pre-build main-build 
-make[1]: Map '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug' wordt binnengegaan
+make[1]: Map '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Release' wordt binnengegaan
 a9-linaro-pre-build-step
  
 make[1]: Er hoeft niets gedaan te worden voor 'main-build'.
-make[1]: Map '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug' wordt verlaten
+make[1]: Map '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Release' wordt verlaten
 
-22:22:59 Build Finished (took 113ms)
+23:34:35 Build Finished (took 116ms)
 
