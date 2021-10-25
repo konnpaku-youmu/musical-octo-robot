@@ -1,4 +1,4 @@
-18:58:56 **** Build of project hw_bsp ****
+23:45:25 **** Build of project hw_bsp ****
 make -k all 
 make[1]: Map '/home/yz/Projects/musical-octo-robot/project_sw/hw_bsp' wordt binnengegaan
 Running Make include in ps7_cortexa9_0/libsrc/axidma_v9_7/src
@@ -75,6 +75,7 @@ Running Make libs in ps7_cortexa9_0/libsrc/axidma_v9_7/src
 make -C ps7_cortexa9_0/libsrc/axidma_v9_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
 make[2]: Map '/home/yz/Projects/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/axidma_v9_7/src' wordt binnengegaan
 Compiling axidma
+arm-none-eabi-ar: creating ../../../lib/libxil.a
 make[3]: Map '/home/yz/Projects/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/axidma_v9_7/src' wordt binnengegaan
 make[3]: Map '/home/yz/Projects/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/axidma_v9_7/src' wordt verlaten
 make[2]: Map '/home/yz/Projects/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/axidma_v9_7/src' wordt verlaten
@@ -177,5 +178,5 @@ make[2]: Map '/home/yz/Projects/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa
 Finished building libraries
 make[1]: Map '/home/yz/Projects/musical-octo-robot/project_sw/hw_bsp' wordt verlaten
 
-18:59:03 Build Finished (took 6s.275ms)
+23:45:31 Build Finished (took 6s.430ms)
 

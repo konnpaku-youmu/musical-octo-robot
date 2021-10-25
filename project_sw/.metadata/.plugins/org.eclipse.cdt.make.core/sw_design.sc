@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?scdStore version="2"?><scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
-<instance id="xilinx.gnu.armv7.exe.debug.320528614;xilinx.gnu.armv7.exe.debug.320528614.">
+<instance id="xilinx.gnu.armv7.exe.debug.1704211485;xilinx.gnu.armv7.exe.debug.1704211485.">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
 <includePath path="/home/yz/.Xilinx/SDK/2018.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/include"/>
 <includePath path="/home/yz/.Xilinx/SDK/2018.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/include-fixed"/>
@@ -417,7 +417,7 @@
 <definedSymbol symbol="__USES_INITFINI__=1"/>
 </collector>
 </instance>
-<instance id="xilinx.gnu.armv7.exe.release.1144619017;xilinx.gnu.armv7.exe.release.1144619017.">
+<instance id="xilinx.gnu.armv7.exe.release.1274891392;xilinx.gnu.armv7.exe.release.1274891392.">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
 <includePath path="/home/yz/.Xilinx/SDK/2018.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/include"/>
 <includePath path="/home/yz/.Xilinx/SDK/2018.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/include-fixed"/>
@@ -834,7 +834,7 @@
 <definedSymbol symbol="__USES_INITFINI__=1"/>
 </collector>
 </instance>
-<instance id="xilinx.gnu.armv7.exe.debug.320528614;xilinx.gnu.armv7.exe.debug.320528614.;xilinx.gnu.armv7.c.toolchain.compiler.debug.1901451961;xilinx.gnu.armv7.c.compiler.input.118100788">
+<instance id="xilinx.gnu.armv7.exe.debug.1704211485;xilinx.gnu.armv7.exe.debug.1704211485.;xilinx.gnu.armv7.c.toolchain.compiler.debug.806955307;xilinx.gnu.armv7.c.compiler.input.1139190231">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
 <includePath path="/home/yz/.Xilinx/SDK/2018.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/include"/>
 <includePath path="/home/yz/.Xilinx/SDK/2018.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin/../lib/gcc/arm-none-eabi/7.2.1/include-fixed"/>

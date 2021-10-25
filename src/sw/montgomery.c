@@ -128,6 +128,12 @@ void montMul(uint32_t *a, uint32_t *b, uint32_t *n, uint32_t *n_prime,
         return;
 }
 
+// C,S assign -- 15000 cycles
+// linker script -- 2500 cycles
+// umlal -- 20000 cycles
+// integrate above -- 10000 cycles
+// carry addition -- 60000 cycles
+
 void montMulOpt(uint32_t *a, uint32_t *b, uint32_t *n, uint32_t *n_prime,
              uint32_t *res, uint32_t size)
 {
@@ -140,7 +146,6 @@ void montMulOpt(uint32_t *a, uint32_t *b, uint32_t *n, uint32_t *n_prime,
         memset(n_ex, 0, (size + 1) * sizeof(uint32_t));
         memcpy(n_ex, n, size * sizeof(uint32_t));
 
-        uint64_t sum;
         uint32_t C = 0, S = 0;
 
         for (int i = 0; i < size; i++)
@@ -148,20 +153,16 @@ void montMulOpt(uint32_t *a, uint32_t *b, uint32_t *n, uint32_t *n_prime,
                 for (int j = 0; j < i; j++)
                 {
                         fast_calc(t[0], a[j], b[i - j], &C, &S);
-//                        mov_CS(sum, &C, &S);
-                        carry_addition(t, 1, C);
+                        carry_add_asm(&t[1], C);
                         fast_calc(S, m[j], n_ex[i - j], &C, &S);
-//                        mov_CS(sum, &C, &S);
                         t[0] = S;
-                        carry_addition(t, 1, C);
+                        carry_add_asm(&t[1], C);
                 }
                 fast_calc(t[0], a[i], b[0], &C, &S);
-//                mov_CS(sum, &C, &S);
-                carry_addition(t, 1, C);
+                carry_add_asm(&t[1], C);
                 m[i] = fast_mul(0, S, n_prime[0]);
                 fast_calc(S, m[i], n_ex[0], &C, &S);
-//                mov_CS(sum, &C, &S);
-                carry_addition(t, 1, C);
+                carry_add_asm(&t[1], C);
                 t[0] = t[1];
                 t[1] = t[2];
                 t[2] = 0;
@@ -172,13 +173,13 @@ void montMulOpt(uint32_t *a, uint32_t *b, uint32_t *n, uint32_t *n_prime,
                 for (int j = i - size + 1; j < size; j++)
                 {
                         fast_calc(t[0], a[j], b[i-j], &C, &S);
-//                        mov_CS(sum, &C, &S);
-                        carry_addition(t, 1, C);
+                        carry_add_asm(&t[1], C);
                         fast_calc(S, m[j], n_ex[i-j], &C, &S);
-//                        mov_CS(sum, &C, &S);
                         t[0] = S;
-                        carry_addition(t, 1, C);
+                        carry_add_asm(&t[1], C);
                 }
+
+
                 m[i - size] = t[0];
                 t[0] = t[1];
                 t[1] = t[2];

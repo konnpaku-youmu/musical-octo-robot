@@ -1,0 +1,70 @@
+.text
+
+.global mov_CS
+.func mov_CS, mov_CS
+.type mov_CS, %function
+
+mov_CS:
+	str r1, [r2]
+	str r0, [r3]
+	bx lr
+.endfunc
+
+.text
+
+.global fast_mul
+.func fast_mul, fast_mul
+.type fast_mul, %function
+
+fast_mul:
+	mov r3, #0
+	umlal r0, r3, r1, r2
+	mov r1, r3
+	bx lr
+.endfunc
+
+.text
+
+.global fast_calc
+.func fast_calc, fast_calc
+.type fast_calc, %function
+
+fast_calc:
+	mov r12, #0
+	umlal r0, r12, r1, r2
+	str r12, [r3]
+	str r0, [r3, #-4]
+	bx lr
+.endfunc
+
+.text
+
+.global carry_add_asm
+.func carry_add_asm, carry_add_asm
+.type carry_add_asm, %function
+
+carry_add_asm:
+	cmp r1,#0
+	beq end_add
+add_loop:
+	ldr r12, [r0] @
+	add r0, r0, #4
+	bne add_loop
+end_add:
+	bx lr
+.endfunc
+
+@USEFUL FUNCTIONS
+
+@ add Rx, Ry, Rz	//Rx = Ry + Rz  second operand can be constant
+@ sub Rx, Ry, Rz	//Rx = Ry - Rz second operand can be constant
+@ addc Rx, Ry, Rz	//Rx = Ry + Rz + CARRY   one operand can be constant
+@ cmp Rx, Ry		//compares Rx and Ry and if they are equal sets Z flag, otherwise resets Z flag (works by subtracting two values and checks if result is zero)
+@ b{cond} <label>		//Jumps to given label in the code if given condition is satisfied
+@ umull Rn, Rm, Rx, Ry 	//{Rm, Rn} = Rx * Ry Multiplies unsigned 32bit values in Rx and Ry. Stores the higher 32 bits in Rm, and lower in Rn
+@ ldr Rx, [Ry]		//Loads from memory pointed by Ry to register Rx, see addressing modes for post increment, pre decrement
+@ str Rx, [Ry]		//Stores to memory pointed by Ry value in register Rx, see addressing modes for post increment, pre decrement
+@ pop {}			//Pops values from stack to specified registers in order they are specified
+@ push {}			//Push registers to stack in orded they are specified
+@ ldmia rx, {set of registers} //Loads to specified set of registers memory values, starting from rx. Increasing addresses
+@ stmia rx, {set of registers} //Stores specified set of registers in memory, starting from address pointed by rx. Increasing addresses
