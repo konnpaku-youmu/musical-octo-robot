@@ -76,16 +76,28 @@ multiply:
 
 .text
 
-.global montMulASM
-.func montMulASM, montMulASM
-.type montMulASM, %function
+.global mov_CS
+.func mov_CS, mov_CS
+.type mov_CS, %function
 
-montMulASM:
-
+mov_CS:
+	str r1, [r2]
+	str r0, [r3]
 	bx lr
 .endfunc
 
+.text
 
+.global fast_calc
+.func fast_calc, fast_calc
+.type fast_calc, %function
+
+fast_calc:
+	mov r3, #0
+	umlal r0, r3, r1, r2
+	mov r1, r3
+	bx lr
+.endfunc
 
 @USEFUL FUNCTIONS
 
