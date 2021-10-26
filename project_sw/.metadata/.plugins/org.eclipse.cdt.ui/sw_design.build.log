@@ -1,10 +1,10 @@
-01:45:21 **** Incremental Build of configuration Debug for project sw_design ****
+18:33:25 **** Incremental Build of configuration Debug for project sw_design ****
 make pre-build main-build 
-make[1]: Map '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug' wordt binnengegaan
+make[1]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/sw_design/Debug'
 a9-linaro-pre-build-step
  
-make[1]: Er hoeft niets gedaan te worden voor 'main-build'.
-make[1]: Map '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug' wordt verlaten
+make[1]: Nothing to be done for 'main-build'.
+make[1]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/sw_design/Debug'
 
-01:45:21 Build Finished (took 115ms)
+18:33:25 Build Finished (took 227ms)
 

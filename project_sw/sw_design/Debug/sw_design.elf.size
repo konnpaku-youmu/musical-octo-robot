@@ -1,2 +1,2 @@
    text	   data	    bss	    dec	    hex	filename
-  83700	   3352	   9008	  96060	  1773c	sw_design.elf
+  85620	   3352	  23344	 112316	  1b6bc	sw_design.elf

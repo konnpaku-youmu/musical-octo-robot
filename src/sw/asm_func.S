@@ -32,31 +32,28 @@ fast_mul:
 fast_calc:
 	mov r12, #0
 	umlal r0, r12, r1, r2
-	str r12, [r3]
-	str r0, [r3, #-4]
-	bx lr
-.endfunc
-
-.text
-
-.global carry_add_asm
-.func carry_add_asm, carry_add_asm
-.type carry_add_asm, %function
-
-carry_add_asm:
-	cmp r1,#0
+	str r12, [r3] @ C
+	pop {r1}
+	str r0, [r1]  @ S
+	pop {r3}
+	mov r4, r3
+	add r4, #4;
+	cmp r12,#0
 	beq end_add
 add_loop:
-	ldr r12, [r0]   @ t[i]
-	adds r12, r12, r1 @ sum = t[i] + C
-	mrs r1, CPSR
-	lsr r1, #29
-	and r1, r1, #1
-	str r12, [r0]
-	add r0, r0, #4
-	cmp r1, #0
+	ldr r0, [r4]
+	adds r0, r0, r12 @ sum = t[i] + C
+	mrs r12, CPSR
+	lsr r12, #29
+	and r12, r12, #1  @ C
+	str r0, [r4]
+	add r4, r4, #4
+	cmp r12, #0
 	bne add_loop
 end_add:
+	push {r3}
+	push {r1}
+	
 	bx lr
 .endfunc
 

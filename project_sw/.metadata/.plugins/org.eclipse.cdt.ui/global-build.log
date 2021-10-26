@@ -1,143 +1,895 @@
-01:45:13 **** Incremental Build of configuration Debug for project sw_design ****
+18:33:04 **** Build of project hw_bsp ****
+make -k all 
+make[1]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp'
+Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/dmaps_v2_3/src'
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/dmaps_v2_3/src'
+Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/ddrps_v1_0/src'
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/ddrps_v1_0/src'
+Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_4/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/qspips_v3_4/src'
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/qspips_v3_4/src'
+Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_7/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/standalone_v6_7/src'
+make[3]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/standalone_v6_7/src/profile'
+make[3]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/standalone_v6_7/src/profile'
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/standalone_v6_7/src'
+Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/gpiops_v3_3/src'
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/gpiops_v3_3/src'
+Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/emacps_v3_7/src'
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/emacps_v3_7/src'
+Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/devcfg_v3_5/src'
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/devcfg_v3_5/src'
+Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_9/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/scugic_v3_9/src'
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/scugic_v3_9/src'
+Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_6/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/uartps_v3_6/src'
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/uartps_v3_6/src'
+Running Make include in ps7_cortexa9_0/libsrc/axidma_v9_7/src
+make -C ps7_cortexa9_0/libsrc/axidma_v9_7/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/axidma_v9_7/src'
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/axidma_v9_7/src'
+Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src'
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src'
+Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src'
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src'
+Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/scuwdt_v2_1/src'
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/scuwdt_v2_1/src'
+Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_5/src
+make -C ps7_cortexa9_0/libsrc/sdps_v3_5/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/sdps_v3_5/src'
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/sdps_v3_5/src'
+Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src'
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src'
+Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src'
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src'
+Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/scutimer_v2_1/src'
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/scutimer_v2_1/src'
+Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/dmaps_v2_3/src'
+Compiling dmaps
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/dmaps_v2_3/src'
+Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/ddrps_v1_0/src'
+Compiling ddrps
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/ddrps_v1_0/src'
+Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_4/src
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/qspips_v3_4/src'
+Compiling qspips
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/qspips_v3_4/src'
+Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_7/src
+make -C ps7_cortexa9_0/libsrc/standalone_v6_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/standalone_v6_7/src'
+Compiling standalone
+In file included from xtime_l.c:53:0:
+xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:57:0:
+xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:55:0:
+xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from usleep.c:60:0:
+xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/standalone_v6_7/src'
+Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/gpiops_v3_3/src'
+Compiling gpiops
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/gpiops_v3_3/src'
+Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_7/src
+make -C ps7_cortexa9_0/libsrc/emacps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/emacps_v3_7/src'
+Compiling emacps
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/emacps_v3_7/src'
+Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/devcfg_v3_5/src'
+Compiling devcfg
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/devcfg_v3_5/src'
+Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_9/src
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/scugic_v3_9/src'
+Compiling scugic
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/scugic_v3_9/src'
+Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_6/src
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/uartps_v3_6/src'
+Compiling uartps
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/uartps_v3_6/src'
+Running Make libs in ps7_cortexa9_0/libsrc/axidma_v9_7/src
+make -C ps7_cortexa9_0/libsrc/axidma_v9_7/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/axidma_v9_7/src'
+Compiling axidma
+make[3]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/axidma_v9_7/src'
+make[3]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/axidma_v9_7/src'
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/axidma_v9_7/src'
+Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src'
+Compiling xadcps
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/xadcps_v2_2/src'
+Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src'
+Compiling cpu_cortexa9
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src'
+Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/scuwdt_v2_1/src'
+Compiling scuwdt
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/scuwdt_v2_1/src'
+Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_5/src
+make -C ps7_cortexa9_0/libsrc/sdps_v3_5/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/sdps_v3_5/src'
+Compiling sdps
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/sdps_v3_5/src'
+Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src'
+Compiling usbps
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/usbps_v2_4/src'
+Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src'
+Compiling coresightps_dcc
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src'
+Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+make[2]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/scutimer_v2_1/src'
+Compiling scutimer
+make[2]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp/ps7_cortexa9_0/libsrc/scutimer_v2_1/src'
+Finished building libraries
+make[1]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/hw_bsp'
+18:33:16 **** Build of configuration Debug for project sw_design ****
 make pre-build main-build 
-make[1]: Map '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug' wordt binnengegaan
+make[1]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/sw_design/Debug'
 a9-linaro-pre-build-step
+ 
+Building file: ../src/platform/interface.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform/interface.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hw_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform/interface.d" -MT"src/platform/interface.o" -o "src/platform/interface.o" "../src/platform/interface.c"
+Finished building: ../src/platform/interface.c
+ 
+Building file: ../src/platform/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hw_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform/platform.d" -MT"src/platform/platform.o" -o "src/platform/platform.o" "../src/platform/platform.c"
+Finished building: ../src/platform/platform.c
+ 
+Building file: ../src/asm_func.S
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/asm_func.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hw_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/asm_func.d" -MT"src/asm_func.o" -o "src/asm_func.o" "../src/asm_func.S"
+Finished building: ../src/asm_func.S
+ 
+Building file: ../src/hw_accelerator.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/hw_accelerator.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hw_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/hw_accelerator.d" -MT"src/hw_accelerator.o" -o "src/hw_accelerator.o" "../src/hw_accelerator.c"
+Finished building: ../src/hw_accelerator.c
+ 
+Building file: ../src/main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hw_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
  
 Building file: ../src/montgomery.c
 Invoking: ARM v7 gcc compiler
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/montgomery.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hw_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/montgomery.d" -MT"src/montgomery.o" -o "src/montgomery.o" "../src/montgomery.c"
-../src/montgomery.c: In function 'carry_addition':
-../src/montgomery.c:19:29: warning: passing argument 2 of 'mov_CS' from incompatible pointer type [-Wincompatible-pointer-types]
-                 mov_CS(sum, &C, &t[i]);
-                             ^
-In file included from ../src/montgomery.c:6:0:
-../src/asm_func.h:13:6: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint64_t * {aka long long unsigned int *}'
- void mov_CS(uint64_t sum, uint32_t* C, uint32_t* S);
-      ^~~~~~
 ../src/montgomery.c: In function 'montMulOpt':
-../src/montgomery.c:155:41: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
-                         fast_calc(t[0], a[j], b[i - j], &C, &S);
-                                         ^
+../src/montgomery.c:133:20: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+    fast_calc(t[0], a[j], b[i - j], &C, &S, &t);
+                    ^
 In file included from ../src/montgomery.c:6:0:
 ../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
- uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S);
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
           ^~~~~~~~~
-../src/montgomery.c:155:47: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
-                         fast_calc(t[0], a[j], b[i - j], &C, &S);
-                                               ^
+../src/montgomery.c:133:26: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+    fast_calc(t[0], a[j], b[i - j], &C, &S, &t);
+                          ^
 In file included from ../src/montgomery.c:6:0:
 ../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
- uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S);
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
           ^~~~~~~~~
-../src/montgomery.c:157:38: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
-                         fast_calc(S, m[j], n_ex[i - j], &C, &S);
-                                      ^
+../src/montgomery.c:133:44: warning: passing argument 6 of 'fast_calc' from incompatible pointer type [-Wincompatible-pointer-types]
+    fast_calc(t[0], a[j], b[i - j], &C, &S, &t);
+                                            ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t (*)[3] {aka long unsigned int (*)[3]}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:134:17: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+    fast_calc(S, m[j], n_ex[i - j], &C, &t, &t);
+                 ^
 In file included from ../src/montgomery.c:6:0:
 ../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
- uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S);
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
           ^~~~~~~~~
-../src/montgomery.c:157:44: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
-                         fast_calc(S, m[j], n_ex[i - j], &C, &S);
-                                            ^~~~
+../src/montgomery.c:134:23: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+    fast_calc(S, m[j], n_ex[i - j], &C, &t, &t);
+                       ^~~~
 In file included from ../src/montgomery.c:6:0:
 ../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
- uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S);
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
           ^~~~~~~~~
-../src/montgomery.c:161:33: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
-                 fast_calc(t[0], a[i], b[0], &C, &S);
-                                 ^
+../src/montgomery.c:134:40: warning: passing argument 5 of 'fast_calc' from incompatible pointer type [-Wincompatible-pointer-types]
+    fast_calc(S, m[j], n_ex[i - j], &C, &t, &t);
+                                        ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t (*)[3] {aka long unsigned int (*)[3]}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:134:44: warning: passing argument 6 of 'fast_calc' from incompatible pointer type [-Wincompatible-pointer-types]
+    fast_calc(S, m[j], n_ex[i - j], &C, &t, &t);
+                                            ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t (*)[3] {aka long unsigned int (*)[3]}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:137:19: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+   fast_calc(t[0], a[i], b[0], &C, &S, &t);
+                   ^
 In file included from ../src/montgomery.c:6:0:
 ../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
- uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S);
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
           ^~~~~~~~~
-../src/montgomery.c:161:39: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
-                 fast_calc(t[0], a[i], b[0], &C, &S);
+../src/montgomery.c:137:25: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+   fast_calc(t[0], a[i], b[0], &C, &S, &t);
+                         ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:137:39: warning: passing argument 6 of 'fast_calc' from incompatible pointer type [-Wincompatible-pointer-types]
+   fast_calc(t[0], a[i], b[0], &C, &S, &t);
                                        ^
 In file included from ../src/montgomery.c:6:0:
-../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
- uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S);
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t (*)[3] {aka long unsigned int (*)[3]}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
           ^~~~~~~~~
-../src/montgomery.c:163:36: warning: passing argument 2 of 'fast_mul' makes pointer from integer without a cast [-Wint-conversion]
-                 m[i] = fast_mul(0, S, n_prime[0]);
-                                    ^
+../src/montgomery.c:138:22: warning: passing argument 2 of 'fast_mul' makes pointer from integer without a cast [-Wint-conversion]
+   m[i] = fast_mul(0, S, n_prime[0]);
+                      ^
 In file included from ../src/montgomery.c:6:0:
 ../src/asm_func.h:16:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
  uint64_t fast_mul(uint32_t a, uint32_t *b, uint32_t *c);
           ^~~~~~~~
-../src/montgomery.c:163:39: warning: passing argument 3 of 'fast_mul' makes pointer from integer without a cast [-Wint-conversion]
-                 m[i] = fast_mul(0, S, n_prime[0]);
-                                       ^~~~~~~
+../src/montgomery.c:138:25: warning: passing argument 3 of 'fast_mul' makes pointer from integer without a cast [-Wint-conversion]
+   m[i] = fast_mul(0, S, n_prime[0]);
+                         ^~~~~~~
 In file included from ../src/montgomery.c:6:0:
 ../src/asm_func.h:16:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
  uint64_t fast_mul(uint32_t a, uint32_t *b, uint32_t *c);
           ^~~~~~~~
-../src/montgomery.c:164:30: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
-                 fast_calc(S, m[i], n_ex[0], &C, &S);
-                              ^
+../src/montgomery.c:139:16: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+   fast_calc(S, m[i], n_ex[0], &C, &S, &t);
+                ^
 In file included from ../src/montgomery.c:6:0:
 ../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
- uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S);
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
           ^~~~~~~~~
-../src/montgomery.c:164:36: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
-                 fast_calc(S, m[i], n_ex[0], &C, &S);
-                                    ^~~~
+../src/montgomery.c:139:22: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+   fast_calc(S, m[i], n_ex[0], &C, &S, &t);
+                      ^~~~
 In file included from ../src/montgomery.c:6:0:
 ../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
- uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S);
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
           ^~~~~~~~~
-../src/montgomery.c:175:41: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
-                         fast_calc(t[0], a[j], b[i-j], &C, &S);
-                                         ^
+../src/montgomery.c:139:39: warning: passing argument 6 of 'fast_calc' from incompatible pointer type [-Wincompatible-pointer-types]
+   fast_calc(S, m[i], n_ex[0], &C, &S, &t);
+                                       ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t (*)[3] {aka long unsigned int (*)[3]}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:145:20: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+    fast_calc(t[0], a[j], b[i + 1 - j], &C, &S, &t);
+                    ^
 In file included from ../src/montgomery.c:6:0:
 ../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
- uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S);
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
           ^~~~~~~~~
-../src/montgomery.c:175:47: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
-                         fast_calc(t[0], a[j], b[i-j], &C, &S);
-                                               ^
+../src/montgomery.c:145:26: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+    fast_calc(t[0], a[j], b[i + 1 - j], &C, &S, &t);
+                          ^
 In file included from ../src/montgomery.c:6:0:
 ../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
- uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S);
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
           ^~~~~~~~~
-../src/montgomery.c:177:38: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
-                         fast_calc(S, m[j], n_ex[i-j], &C, &S);
-                                      ^
+../src/montgomery.c:145:48: warning: passing argument 6 of 'fast_calc' from incompatible pointer type [-Wincompatible-pointer-types]
+    fast_calc(t[0], a[j], b[i + 1 - j], &C, &S, &t);
+                                                ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t (*)[3] {aka long unsigned int (*)[3]}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:146:17: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+    fast_calc(S, m[j], n_ex[i + 1 - j], &C, &t, &t);
+                 ^
 In file included from ../src/montgomery.c:6:0:
 ../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
- uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S);
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
           ^~~~~~~~~
-../src/montgomery.c:177:44: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
-                         fast_calc(S, m[j], n_ex[i-j], &C, &S);
-                                            ^~~~
+../src/montgomery.c:146:23: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+    fast_calc(S, m[j], n_ex[i + 1 - j], &C, &t, &t);
+                       ^~~~
 In file included from ../src/montgomery.c:6:0:
 ../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
- uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S);
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
           ^~~~~~~~~
+../src/montgomery.c:146:44: warning: passing argument 5 of 'fast_calc' from incompatible pointer type [-Wincompatible-pointer-types]
+    fast_calc(S, m[j], n_ex[i + 1 - j], &C, &t, &t);
+                                            ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t (*)[3] {aka long unsigned int (*)[3]}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:146:48: warning: passing argument 6 of 'fast_calc' from incompatible pointer type [-Wincompatible-pointer-types]
+    fast_calc(S, m[j], n_ex[i + 1 - j], &C, &t, &t);
+                                                ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t (*)[3] {aka long unsigned int (*)[3]}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:149:19: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+   fast_calc(t[0], a[i + 1], b[0], &C, &S, &t);
+                   ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:149:29: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+   fast_calc(t[0], a[i + 1], b[0], &C, &S, &t);
+                             ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:149:43: warning: passing argument 6 of 'fast_calc' from incompatible pointer type [-Wincompatible-pointer-types]
+   fast_calc(t[0], a[i + 1], b[0], &C, &S, &t);
+                                           ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t (*)[3] {aka long unsigned int (*)[3]}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:150:26: warning: passing argument 2 of 'fast_mul' makes pointer from integer without a cast [-Wint-conversion]
+   m[i + 1] = fast_mul(0, S, n_prime[0]);
+                          ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:16:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_mul(uint32_t a, uint32_t *b, uint32_t *c);
+          ^~~~~~~~
+../src/montgomery.c:150:29: warning: passing argument 3 of 'fast_mul' makes pointer from integer without a cast [-Wint-conversion]
+   m[i + 1] = fast_mul(0, S, n_prime[0]);
+                             ^~~~~~~
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:16:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_mul(uint32_t a, uint32_t *b, uint32_t *c);
+          ^~~~~~~~
+../src/montgomery.c:151:16: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+   fast_calc(S, m[i + 1], n_ex[0], &C, &S, &t);
+                ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:151:26: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+   fast_calc(S, m[i + 1], n_ex[0], &C, &S, &t);
+                          ^~~~
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:151:43: warning: passing argument 6 of 'fast_calc' from incompatible pointer type [-Wincompatible-pointer-types]
+   fast_calc(S, m[i + 1], n_ex[0], &C, &S, &t);
+                                           ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t (*)[3] {aka long unsigned int (*)[3]}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:157:20: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+    fast_calc(t[0], a[j], b[i + 2 - j], &C, &S, &t);
+                    ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:157:26: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+    fast_calc(t[0], a[j], b[i + 2 - j], &C, &S, &t);
+                          ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:157:48: warning: passing argument 6 of 'fast_calc' from incompatible pointer type [-Wincompatible-pointer-types]
+    fast_calc(t[0], a[j], b[i + 2 - j], &C, &S, &t);
+                                                ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t (*)[3] {aka long unsigned int (*)[3]}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:158:17: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+    fast_calc(S, m[j], n_ex[i + 2 - j], &C, &t, &t);
+                 ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:158:23: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+    fast_calc(S, m[j], n_ex[i + 2 - j], &C, &t, &t);
+                       ^~~~
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:158:44: warning: passing argument 5 of 'fast_calc' from incompatible pointer type [-Wincompatible-pointer-types]
+    fast_calc(S, m[j], n_ex[i + 2 - j], &C, &t, &t);
+                                            ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t (*)[3] {aka long unsigned int (*)[3]}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:158:48: warning: passing argument 6 of 'fast_calc' from incompatible pointer type [-Wincompatible-pointer-types]
+    fast_calc(S, m[j], n_ex[i + 2 - j], &C, &t, &t);
+                                                ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t (*)[3] {aka long unsigned int (*)[3]}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:161:19: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+   fast_calc(t[0], a[i + 2], b[0], &C, &S, &t);
+                   ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:161:29: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+   fast_calc(t[0], a[i + 2], b[0], &C, &S, &t);
+                             ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:161:43: warning: passing argument 6 of 'fast_calc' from incompatible pointer type [-Wincompatible-pointer-types]
+   fast_calc(t[0], a[i + 2], b[0], &C, &S, &t);
+                                           ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t (*)[3] {aka long unsigned int (*)[3]}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:162:26: warning: passing argument 2 of 'fast_mul' makes pointer from integer without a cast [-Wint-conversion]
+   m[i + 2] = fast_mul(0, S, n_prime[0]);
+                          ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:16:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_mul(uint32_t a, uint32_t *b, uint32_t *c);
+          ^~~~~~~~
+../src/montgomery.c:162:29: warning: passing argument 3 of 'fast_mul' makes pointer from integer without a cast [-Wint-conversion]
+   m[i + 2] = fast_mul(0, S, n_prime[0]);
+                             ^~~~~~~
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:16:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_mul(uint32_t a, uint32_t *b, uint32_t *c);
+          ^~~~~~~~
+../src/montgomery.c:163:16: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+   fast_calc(S, m[i + 2], n_ex[0], &C, &S, &t);
+                ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:163:26: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+   fast_calc(S, m[i + 2], n_ex[0], &C, &S, &t);
+                          ^~~~
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:163:43: warning: passing argument 6 of 'fast_calc' from incompatible pointer type [-Wincompatible-pointer-types]
+   fast_calc(S, m[i + 2], n_ex[0], &C, &S, &t);
+                                           ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t (*)[3] {aka long unsigned int (*)[3]}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:169:20: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+    fast_calc(t[0], a[j], b[i + 3 - j], &C, &S, &t);
+                    ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:169:26: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+    fast_calc(t[0], a[j], b[i + 3 - j], &C, &S, &t);
+                          ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:169:48: warning: passing argument 6 of 'fast_calc' from incompatible pointer type [-Wincompatible-pointer-types]
+    fast_calc(t[0], a[j], b[i + 3 - j], &C, &S, &t);
+                                                ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t (*)[3] {aka long unsigned int (*)[3]}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:170:17: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+    fast_calc(S, m[j], n_ex[i + 3 - j], &C, &t, &t);
+                 ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:170:23: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+    fast_calc(S, m[j], n_ex[i + 3 - j], &C, &t, &t);
+                       ^~~~
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:170:44: warning: passing argument 5 of 'fast_calc' from incompatible pointer type [-Wincompatible-pointer-types]
+    fast_calc(S, m[j], n_ex[i + 3 - j], &C, &t, &t);
+                                            ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t (*)[3] {aka long unsigned int (*)[3]}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:170:48: warning: passing argument 6 of 'fast_calc' from incompatible pointer type [-Wincompatible-pointer-types]
+    fast_calc(S, m[j], n_ex[i + 3 - j], &C, &t, &t);
+                                                ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t (*)[3] {aka long unsigned int (*)[3]}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:173:19: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+   fast_calc(t[0], a[i + 3], b[0], &C, &S, &t);
+                   ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:173:29: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+   fast_calc(t[0], a[i + 3], b[0], &C, &S, &t);
+                             ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:173:43: warning: passing argument 6 of 'fast_calc' from incompatible pointer type [-Wincompatible-pointer-types]
+   fast_calc(t[0], a[i + 3], b[0], &C, &S, &t);
+                                           ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t (*)[3] {aka long unsigned int (*)[3]}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:174:26: warning: passing argument 2 of 'fast_mul' makes pointer from integer without a cast [-Wint-conversion]
+   m[i + 3] = fast_mul(0, S, n_prime[0]);
+                          ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:16:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_mul(uint32_t a, uint32_t *b, uint32_t *c);
+          ^~~~~~~~
+../src/montgomery.c:174:29: warning: passing argument 3 of 'fast_mul' makes pointer from integer without a cast [-Wint-conversion]
+   m[i + 3] = fast_mul(0, S, n_prime[0]);
+                             ^~~~~~~
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:16:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_mul(uint32_t a, uint32_t *b, uint32_t *c);
+          ^~~~~~~~
+../src/montgomery.c:175:16: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+   fast_calc(S, m[i + 3], n_ex[0], &C, &S, &t);
+                ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:175:26: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+   fast_calc(S, m[i + 3], n_ex[0], &C, &S, &t);
+                          ^~~~
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:175:43: warning: passing argument 6 of 'fast_calc' from incompatible pointer type [-Wincompatible-pointer-types]
+   fast_calc(S, m[i + 3], n_ex[0], &C, &S, &t);
+                                           ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t (*)[3] {aka long unsigned int (*)[3]}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:183:20: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+    fast_calc(t[0], a[j], b[i - j], &C, &S, &t);
+                    ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:183:26: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+    fast_calc(t[0], a[j], b[i - j], &C, &S, &t);
+                          ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:183:44: warning: passing argument 6 of 'fast_calc' from incompatible pointer type [-Wincompatible-pointer-types]
+    fast_calc(t[0], a[j], b[i - j], &C, &S, &t);
+                                            ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t (*)[3] {aka long unsigned int (*)[3]}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:184:17: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+    fast_calc(S, m[j], n_ex[i - j], &C, &t, &t);
+                 ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:184:23: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+    fast_calc(S, m[j], n_ex[i - j], &C, &t, &t);
+                       ^~~~
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:184:40: warning: passing argument 5 of 'fast_calc' from incompatible pointer type [-Wincompatible-pointer-types]
+    fast_calc(S, m[j], n_ex[i - j], &C, &t, &t);
+                                        ^
 Finished building: ../src/montgomery.c
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t (*)[3] {aka long unsigned int (*)[3]}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:184:44: warning: passing argument 6 of 'fast_calc' from incompatible pointer type [-Wincompatible-pointer-types]
+    fast_calc(S, m[j], n_ex[i - j], &C, &t, &t);
+                                            ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t (*)[3] {aka long unsigned int (*)[3]}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:193:20: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+    fast_calc(t[0], a[j], b[i + 1 - j], &C, &S, &t);
+                    ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:193:26: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+    fast_calc(t[0], a[j], b[i + 1 - j], &C, &S, &t);
+                          ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:193:48: warning: passing argument 6 of 'fast_calc' from incompatible pointer type [-Wincompatible-pointer-types]
+    fast_calc(t[0], a[j], b[i + 1 - j], &C, &S, &t);
+                                                ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t (*)[3] {aka long unsigned int (*)[3]}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:194:17: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+    fast_calc(S, m[j], n_ex[i + 1 - j], &C, &t, &t);
+                 ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:194:23: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+    fast_calc(S, m[j], n_ex[i + 1 - j], &C, &t, &t);
+                       ^~~~
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:194:44: warning: passing argument 5 of 'fast_calc' from incompatible pointer type [-Wincompatible-pointer-types]
+    fast_calc(S, m[j], n_ex[i + 1 - j], &C, &t, &t);
+                                            ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t (*)[3] {aka long unsigned int (*)[3]}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:194:48: warning: passing argument 6 of 'fast_calc' from incompatible pointer type [-Wincompatible-pointer-types]
+    fast_calc(S, m[j], n_ex[i + 1 - j], &C, &t, &t);
+                                                ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t (*)[3] {aka long unsigned int (*)[3]}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:203:20: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+    fast_calc(t[0], a[j], b[i + 2 - j], &C, &S, &t);
+                    ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:203:26: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+    fast_calc(t[0], a[j], b[i + 2 - j], &C, &S, &t);
+                          ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:203:48: warning: passing argument 6 of 'fast_calc' from incompatible pointer type [-Wincompatible-pointer-types]
+    fast_calc(t[0], a[j], b[i + 2 - j], &C, &S, &t);
+                                                ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t (*)[3] {aka long unsigned int (*)[3]}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:204:17: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+    fast_calc(S, m[j], n_ex[i + 2 - j], &C, &t, &t);
+                 ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:204:23: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+    fast_calc(S, m[j], n_ex[i + 2 - j], &C, &t, &t);
+                       ^~~~
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:204:44: warning: passing argument 5 of 'fast_calc' from incompatible pointer type [-Wincompatible-pointer-types]
+    fast_calc(S, m[j], n_ex[i + 2 - j], &C, &t, &t);
+                                            ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t (*)[3] {aka long unsigned int (*)[3]}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:204:48: warning: passing argument 6 of 'fast_calc' from incompatible pointer type [-Wincompatible-pointer-types]
+    fast_calc(S, m[j], n_ex[i + 2 - j], &C, &t, &t);
+                                                ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t (*)[3] {aka long unsigned int (*)[3]}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:213:20: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+    fast_calc(t[0], a[j], b[i + 3 - j], &C, &S, &t);
+                    ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:213:26: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+    fast_calc(t[0], a[j], b[i + 3 - j], &C, &S, &t);
+                          ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:213:48: warning: passing argument 6 of 'fast_calc' from incompatible pointer type [-Wincompatible-pointer-types]
+    fast_calc(t[0], a[j], b[i + 3 - j], &C, &S, &t);
+                                                ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t (*)[3] {aka long unsigned int (*)[3]}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:214:17: warning: passing argument 2 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+    fast_calc(S, m[j], n_ex[i + 3 - j], &C, &t, &t);
+                 ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:214:23: warning: passing argument 3 of 'fast_calc' makes pointer from integer without a cast [-Wint-conversion]
+    fast_calc(S, m[j], n_ex[i + 3 - j], &C, &t, &t);
+                       ^~~~
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t {aka long unsigned int}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:214:44: warning: passing argument 5 of 'fast_calc' from incompatible pointer type [-Wincompatible-pointer-types]
+    fast_calc(S, m[j], n_ex[i + 3 - j], &C, &t, &t);
+                                            ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t (*)[3] {aka long unsigned int (*)[3]}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+../src/montgomery.c:214:48: warning: passing argument 6 of 'fast_calc' from incompatible pointer type [-Wincompatible-pointer-types]
+    fast_calc(S, m[j], n_ex[i + 3 - j], &C, &t, &t);
+                                                ^
+In file included from ../src/montgomery.c:6:0:
+../src/asm_func.h:19:10: note: expected 'uint32_t * {aka long unsigned int *}' but argument is of type 'uint32_t (*)[3] {aka long unsigned int (*)[3]}'
+ uint64_t fast_calc(uint32_t a, uint32_t *b, uint32_t *c, uint32_t *C, uint32_t *S, uint32_t *t1);
+          ^~~~~~~~~
+ 
+Building file: ../src/mp_arith.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mp_arith.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hw_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mp_arith.d" -MT"src/mp_arith.o" -o "src/mp_arith.o" "../src/mp_arith.c"
+../src/mp_arith.c: In function 'mod_add':
+../src/mp_arith.c:72:2: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  memcpy(ext_N, N, 128);
+  ^~~~~~
+../src/mp_arith.c:72:2: warning: incompatible implicit declaration of built-in function 'memcpy'
+../src/mp_arith.c:72:2: note: include '<string.h>' or provide a declaration of 'memcpy'
+../src/mp_arith.c: In function 'mod_sub':
+../src/mp_arith.c:97:2: warning: incompatible implicit declaration of built-in function 'memcpy'
+  memcpy(ext_N, N, 128);
+  ^~~~~~
+../src/mp_arith.c:97:2: note: include '<string.h>' or provide a declaration of 'memcpy'
+Finished building: ../src/mp_arith.c
+ 
+Building file: ../src/testvector.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/testvector.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hw_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/testvector.d" -MT"src/testvector.o" -o "src/testvector.o" "../src/testvector.c"
+Finished building: ../src/testvector.c
+ 
+Building file: ../src/warmup.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/warmup.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hw_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/warmup.d" -MT"src/warmup.o" -o "src/warmup.o" "../src/warmup.c"
+../src/warmup.c: In function 'warmup':
+../src/warmup.c:117:23: warning: initialization from incompatible pointer type [-Wincompatible-pointer-types]
+     int32_t *p_b_ar = &b_ar;
+                       ^
+../src/warmup.c:173:16: warning: initialization makes integer from pointer without a cast [-Wint-conversion]
+     char msg = "cc is :";
+                ^~~~~~~~~
+../src/warmup.c:174:21: warning: passing argument 2 of 'customprint' makes pointer from integer without a cast [-Wint-conversion]
+     customprint(cc, msg);
+                     ^~~
+../src/warmup.c:11:6: note: expected 'char *' but argument is of type 'char'
+ void customprint(uint8_t *in, char *str)
+      ^~~~~~~~~~~
+../src/warmup.c:190:13: warning: variable 'or2' set but not used [-Wunused-but-set-variable]
+     uint8_t or2[]={0xbb, 0xbb, 0xbb, 0xbb};
+             ^~~
+../src/warmup.c:50:5: warning: 'a' is used uninitialized in this function [-Wuninitialized]
+     xil_printf("Value of a = %x\r\n", a);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/warmup.c
  
 Building target: sw_design.elf
 Invoking: ARM v7 gcc linker
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../hw_bsp/ps7_cortexa9_0/lib -o "sw_design.elf" ./src/platform/interface.o ./src/platform/platform.o  ./src/asm_func.o ./src/hw_accelerator.o ./src/main.o ./src/montgomery.o ./src/mp_arith.o ./src/testvector.o ./src/warmup.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../hw_bsp/ps7_cortexa9_0/lib -o "sw_design.elf"  ./src/platform/interface.o ./src/platform/platform.o  ./src/asm_func.o ./src/hw_accelerator.o ./src/main.o ./src/montgomery.o ./src/mp_arith.o ./src/testvector.o ./src/warmup.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 Finished building target: sw_design.elf
  
 Invoking: ARM v7 Print Size
 arm-none-eabi-size sw_design.elf  |tee "sw_design.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  83700	   3352	   9008	  96060	  1773c	sw_design.elf
+  85620	   3352	  23344	 112316	  1b6bc	sw_design.elf
 Finished building: sw_design.elf.size
  
-make[1]: Map '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug' wordt verlaten
-01:45:15 **** Incremental Build of configuration Debug for project sw_design ****
+make[1]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/sw_design/Debug'
+18:33:25 **** Incremental Build of configuration Debug for project sw_design ****
 make pre-build main-build 
-make[1]: Map '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug' wordt binnengegaan
+make[1]: Entering directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/sw_design/Debug'
 a9-linaro-pre-build-step
  
-make[1]: Er hoeft niets gedaan te worden voor 'main-build'.
-make[1]: Map '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug' wordt verlaten
-01:45:21 **** Incremental Build of configuration Debug for project sw_design ****
-make pre-build main-build 
-make[1]: Map '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug' wordt binnengegaan
-a9-linaro-pre-build-step
- 
-make[1]: Er hoeft niets gedaan te worden voor 'main-build'.
-make[1]: Map '/home/yz/Projects/musical-octo-robot/project_sw/sw_design/Debug' wordt verlaten
+make[1]: Nothing to be done for 'main-build'.
+make[1]: Leaving directory '/users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/sw_design/Debug'
