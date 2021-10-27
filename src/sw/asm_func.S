@@ -32,9 +32,8 @@ fast_mul:
 fast_calc:
 	mov r12, #0
 	umlal r0, r12, r1, r2
-	str r12, [r3] @ C
-	pop {r1}
-	str r0, [r1]  @ S
+	@ str r12, [r3] @ C
+	str r0, [r3]  @ S
 	pop {r3}
 	mov r4, r3
 	add r4, #4;
@@ -45,15 +44,13 @@ add_loop:
 	adds r0, r0, r12 @ sum = t[i] + C
 	mrs r12, CPSR
 	lsr r12, #29
-	and r12, r12, #1  @ C
+	and r12, r12, #1  @ C / just select the lowest bit
 	str r0, [r4]
 	add r4, r4, #4
 	cmp r12, #0
 	bne add_loop
 end_add:
 	push {r3}
-	push {r1}
-	
 	bx lr
 .endfunc
 

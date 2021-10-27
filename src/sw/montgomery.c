@@ -59,25 +59,32 @@ void montMul(uint32_t *a, uint32_t *b, uint32_t *n, uint32_t *n_prime,
 
 	for (int i = 0; i < size; i++) {
 		for (int j = 0; j < i; j++) {
+
 			sum = t[0] + (uint64_t) (a[j]) * (uint64_t) (b[i - j]);
 			C = sum >> 32;
 			S = sum & 0x00000000FFFFFFFF;
 			carry_addition(t, 1, C);
+
 			sum = S + (uint64_t) (m[j]) * (uint64_t) (n[i - j]);
 			C = sum >> 32;
 			S = sum & 0x00000000FFFFFFFF;
-			t[0] = S;
 			carry_addition(t, 1, C);
+
+			t[0] = S;
 		}
+
 		sum = t[0] + (uint64_t) (a[i]) * (uint64_t) (b[0]);
 		C = sum >> 32;
 		S = sum & 0x00000000FFFFFFFF;
 		carry_addition(t, 1, C);
+
 		m[i] = (S * n_prime[0]) & 0x00000000FFFFFFFF;
+
 		sum = S + (uint64_t) (m[i]) * (uint64_t) (n[0]);
 		C = sum >> 32;
 		S = sum & 0x00000000FFFFFFFF;
 		carry_addition(t, 1, C);
+
 		t[0] = t[1];
 		t[1] = t[2];
 		t[2] = 0;
@@ -114,6 +121,7 @@ void montMul(uint32_t *a, uint32_t *b, uint32_t *n, uint32_t *n_prime,
 // umlal -- 20000 cycles
 // integrate above -- 10000 cycles
 // carry addition -- 60000 cycles
+// merge multi & carry addition -- 20000 cycles
 
 void montMulOpt(uint32_t *a, uint32_t *b, uint32_t *n, uint32_t *n_prime,
 		uint32_t *res, uint32_t size) {
@@ -126,95 +134,29 @@ void montMulOpt(uint32_t *a, uint32_t *b, uint32_t *n, uint32_t *n_prime,
 	memset(n_ex, 0, (size + 1) * sizeof(uint32_t));
 	memcpy(n_ex, n, size * sizeof(uint32_t));
 
-	uint32_t C = 0, S = 0;
+	uint32_t S = 0;
 
-	for (int i = 0; i < size; i += 4) {
+	for (int i = 0; i < size; i++) {
 		for (int j = 0; j < i; j++) {
-			fast_calc(t[0], a[j], b[i - j], &C, &S, &t);
-			fast_calc(S, m[j], n_ex[i - j], &C, &t, &t);
+			fast_calc(t[0], a[j], b[i - j], &S, &t);
+			fast_calc(S, m[j], n_ex[i - j], &t, &t);
 		}
 
-		fast_calc(t[0], a[i], b[0], &C, &S, &t);
+		fast_calc(t[0], a[i], b[0], &S, &t);
 		m[i] = fast_mul(0, S, n_prime[0]);
-		fast_calc(S, m[i], n_ex[0], &C, &S, &t);
-		t[0] = t[1];
-		t[1] = t[2];
-		t[2] = 0;
-
-		for (int j = 0; j < i + 1; j++) {
-			fast_calc(t[0], a[j], b[i + 1 - j], &C, &S, &t);
-			fast_calc(S, m[j], n_ex[i + 1 - j], &C, &t, &t);
-		}
-
-		fast_calc(t[0], a[i + 1], b[0], &C, &S, &t);
-		m[i + 1] = fast_mul(0, S, n_prime[0]);
-		fast_calc(S, m[i + 1], n_ex[0], &C, &S, &t);
-		t[0] = t[1];
-		t[1] = t[2];
-		t[2] = 0;
-
-		for (int j = 0; j < i + 2; j++) {
-			fast_calc(t[0], a[j], b[i + 2 - j], &C, &S, &t);
-			fast_calc(S, m[j], n_ex[i + 2 - j], &C, &t, &t);
-		}
-
-		fast_calc(t[0], a[i + 2], b[0], &C, &S, &t);
-		m[i + 2] = fast_mul(0, S, n_prime[0]);
-		fast_calc(S, m[i + 2], n_ex[0], &C, &S, &t);
-		t[0] = t[1];
-		t[1] = t[2];
-		t[2] = 0;
-
-		for (int j = 0; j < i + 3; j++) {
-			fast_calc(t[0], a[j], b[i + 3 - j], &C, &S, &t);
-			fast_calc(S, m[j], n_ex[i + 3 - j], &C, &t, &t);
-		}
-
-		fast_calc(t[0], a[i + 3], b[0], &C, &S, &t);
-		m[i + 3] = fast_mul(0, S, n_prime[0]);
-		fast_calc(S, m[i + 3], n_ex[0], &C, &S, &t);
+		fast_calc(S, m[i], n_ex[0], &S, &t);
 		t[0] = t[1];
 		t[1] = t[2];
 		t[2] = 0;
 	}
 
-	for (int i = size; i < 2 * size; i += 4) {
+	for (int i = size; i < 2 * size; i++) {
 		for (int j = i - size + 1; j < size; j++) {
-			fast_calc(t[0], a[j], b[i - j], &C, &S, &t);
-			fast_calc(S, m[j], n_ex[i - j], &C, &t, &t);
+			fast_calc(t[0], a[j], b[i - j], &S, &t);
+			fast_calc(S, m[j], n_ex[i - j], &t, &t);
 		}
 
 		m[i - size] = t[0];
-		t[0] = t[1];
-		t[1] = t[2];
-		t[2] = 0;
-
-		for (int j = i - size + 2; j < size; j++) {
-			fast_calc(t[0], a[j], b[i + 1 - j], &C, &S, &t);
-			fast_calc(S, m[j], n_ex[i + 1 - j], &C, &t, &t);
-		}
-
-		m[i + 1 - size] = t[0];
-		t[0] = t[1];
-		t[1] = t[2];
-		t[2] = 0;
-
-		for (int j = i - size + 3; j < size; j++) {
-			fast_calc(t[0], a[j], b[i + 2 - j], &C, &S, &t);
-			fast_calc(S, m[j], n_ex[i + 2 - j], &C, &t, &t);
-		}
-
-		m[i + 2 - size] = t[0];
-		t[0] = t[1];
-		t[1] = t[2];
-		t[2] = 0;
-
-		for (int j = i - size + 4; j < size; j++) {
-			fast_calc(t[0], a[j], b[i + 3 - j], &C, &S, &t);
-			fast_calc(S, m[j], n_ex[i + 3 - j], &C, &t, &t);
-		}
-
-		m[i + 3 - size] = t[0];
 		t[0] = t[1];
 		t[1] = t[2];
 		t[2] = 0;

@@ -12,5 +12,4 @@ rst -processor
 targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
 dow /users/students/r0822930/Downloads/sw_package_2021/sw_package_pynq_2/musical-octo-robot/project_sw/sw_design/Debug/sw_design.elf
 configparams force-mem-access 0
-targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Xilinx TUL 1234-tulA"} -index 0
-con
+bpadd -addr &main
